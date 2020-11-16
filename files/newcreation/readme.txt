@@ -1,0 +1,1 @@
+based on https://www.altova.com/blog/learning-about-epub-structure-and-content/

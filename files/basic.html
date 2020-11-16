@@ -1,0 +1,51 @@
+
+<div id="main">
+  <div id="area"></div>
+  <div id="prev_bottom" onclick="EbookPrevPage();" class="arrow bottom">
+    <span class="icon icon-left"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
+  <div id="next_bottom" onclick="EbookNextPage();" class="arrow bottom">
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="icon icon-right"></span>
+  </div>
+</div>
+
+
+<script>
+  // this script only runs on the first load of the page;
+  // it does not control page content
+  var Book = ePub("files/newcreation/");
+  Book.renderTo("area");
+  var debugMode = localStorage.getItem("debugMode", "FALSE");
+  // I think the below code causes it to bounce on opening content.
+
+  if (localStorage.ebookLocation && !localStorage.ebookIndex) {
+    var chapter = localStorage.ebookLocation;
+    Book.on("book:ready", function() {
+      Book.displayChapter(chapter);
+    });
+    // https://github.com/futurepress/epub.js/issues/545
+  } else if (localStorage.ebookChapter) {
+    var chapter = "newcreation/" + localStorage.ebookChapter;
+    localStorage.removeItem("ebookChapter");
+    Book.on("book:ready", function() {
+      Book.goto(chapter);
+    });
+  }
+</script>
+<script>
+  // from https://blog.sessionstack.com/how-javascript-works-tracking-changes-in-the-dom-using-mutationobserver-86adc7446401
+  var mutationObserver = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      console.log(mutation);
+    });
+  });
+  // Starts listening for changes in the root HTML element of the page.
+  mutationObserver.observe(document.documentElement, {
+    attributes: true,
+    characterData: true,
+    childList: true,
+    subtree: true,
+    attributeOldValue: true,
+    characterDataOldValue: true
+  });
+</script>

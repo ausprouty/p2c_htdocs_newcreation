@@ -1,0 +1,60 @@
+<div class="lantern">
+    <div class="opening ">
+        <h2 class="toc opening">
+            <a class="toc opening book" href="#bible">Bible</a>
+        </h2>
+        <h2 class="toc opening">
+            <a class="toc opening book" href="#newcreation"
+                >The Straight Path</a
+            >
+        </h2>
+        <ol class="toc opening">
+            <li class="toc opening">
+                <a class="toc opening" href="#newchapter/soil.html">
+                    Soil Testing</a
+                >
+            </li>
+            <li class="toc opening">
+                <a class="toc opening" href="#newchapter/path.html"
+                    >The Straight Path of the New Creation</a
+                >
+            </li>
+            <li class="toc opening">
+                <a class="toc opening" href="#newchapter/prayer.html"
+                    >The Prayer Life of a New Creation Muslim</a
+                >
+            </li>
+            <li class="toc opening">
+                <a class="toc opening" href="#newchapter/confession.html"
+                    >The New Creation Confession</a
+                >
+            </li>
+            <li class="toc opening">
+                <a class="toc opening" href="#newchapter/pilgrimage.html"
+                    >The New Creation Pilgrimage</a
+                >
+            </li>
+            <li class="toc opening">
+                <a class="toc opening" href="#newchapter/house.html"
+                    >How to Start a House Masjid and a Messianic Madrasa for New
+                    Creation
+                </a>
+            </li>
+            <li class="toc opening">
+                <a class="toc opening" href="#newchapter/toc.html">Glossary</a>
+            </li>
+        </ol>
+        <h2 class="toc opening">
+            <a class="toc opening book" href="#principles"
+                >Four Spiritual Principles</a
+            >
+        </h2>
+    </div>
+    <div>
+        <img
+            class="ios-hidden"
+            src="https://newcreations.app/files/images/installOnIOS.png"
+        />
+    </div>
+</div>
+<p class="copyright"></p>

@@ -1,0 +1,113 @@
+﻿.page {
+    background-color: #09716a;
+}
+
+body {
+    font-family: arial;
+}
+h1.title {
+    font-size: 150%;
+    color: #654014;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+h2.subtitle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 125%;
+    color: #654014;
+    line-height: 125%;
+}
+p.text {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size: 100%;
+    color: black;
+}
+p.poem {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    font-size: 100%;
+    color: black;
+}
+p.note {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 100%;
+}
+.note_number {
+    vertical-align: super;
+    font-size: 85%;
+    color: #654014;
+}
+li {
+    padding-top: 20px;
+}
+li.last {
+    padding-bottom: 20px;
+}
+.toc {
+    font-size: 120%;
+    color: white;
+    line-height: 120%;
+    text-decoration: none;
+}
+div.path_index {
+    background-color: #ae6b25;
+    margin-top: -20px;
+}
+h2.toc.path {
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+    font-size: 150%;
+}
+a.note {
+    vertical-align: super;
+    font-size: 85%;
+    color: #654014;
+    text-decoration: none;
+}
+a.return {
+    font-size: 85%;
+    color: #654014;
+    text-decoration: none;
+}
+.top-left {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -32px;
+    font-size: 64px;
+    color: #e2e2e2;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.arrow:hover {
+    color: #777;
+}
+
+.arrow:active,
+.arrow.active {
+    color: #000;
+}
+#next {
+    right: 40px;
+}
+#prev {
+    left: 40px;
+}

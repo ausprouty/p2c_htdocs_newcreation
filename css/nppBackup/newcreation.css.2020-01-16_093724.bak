@@ -1,0 +1,339 @@
+:root {
+    --color-black:black;
+    --color-dark-green:#09716a;
+    --color-light-green:#00b8bc;
+    --color-dark-brown:#654014;
+    --color-light-brown:#ae6b25;
+    --color-tan:#e1a331;
+}
+
+/* nav */
+
+nav {
+  display: block;
+}
+.bar {
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 10;
+	height: 64px;
+	padding-top:0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	background-color :#3ebcce;
+	border-bottom: 1px solid #3ebcce;
+	-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+}
+.bar-nav {
+	top: 0;
+}
+.bar-nav ~ .content {
+	padding-top: 0px;
+}
+
+div.container{
+	width:100%;
+	display:block;
+}
+.nav-front{
+	background-color:var(--color-dark-green);
+}
+.nav-back{
+	background-color:var(--color-light-brown);
+}
+.nav-path{
+	background-color:var(--color-dark-brown);
+}
+.nav-bible{
+	background-color:var(--color-dark-green);
+}
+img.nav-bible,
+img.nav-back,
+img.nav-front,
+img.nav-path
+{
+	width:100%;
+	max-width:535px;
+}
+img.nav-share{
+	width:100%;
+	max-width:65px;
+}
+/* Clear floats after image containers */
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+.nav-column-main{
+	float: left;
+  	width: 87%;
+
+}
+.nav-column-share{
+	float: left;
+  	width: 13%;
+}
+.ios-hidden{
+	display:none;
+}
+.ios-visible{
+	display:block;
+	
+}
+img.ios-visible{
+	width:100%;
+}
+
+table.ios-visible,
+div.ios-visible{
+	background-color:var(--color-dark-green);
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+/* bible*/
+.select-book{
+	padding-top: 20px;
+}
+.bible_background{
+	background-color: var(--color-dark-green);
+	padding-bottom: 50px;
+}
+a.bible-book{
+	color: var(--color-dark-green);
+
+}
+.ml-10{
+	margin-left:10px;
+}
+.bible_book_heading{
+	font-size :30px;
+	color:white;
+	font-weight:bold;
+	line-height: 30px;
+	padding-top: 60px;
+	
+}
+.bible_book{
+	font-size :30px;
+	color:black;
+	font-weight:bold;
+	line-height: 30px;
+	padding-top: 60px;
+	
+}
+.bible_select_chapters{
+	color:white;
+	font-size: 15px;
+}
+table.bible_chapters{
+	width:90%;
+	margin-left:10px;
+	
+}
+td.bible_chapter{
+	border-style: solid;
+	border-color:grey;
+	text-align:center;
+	padding-top: 10px;
+	padding-bottom:10px;
+	/*background-color:#f3c571;*/
+}
+a.bible_link{
+	color:white;
+	font-weight: bolder;
+}
+
+.bible{
+	line-height:25px;
+	margin-left:10px;
+	margin-right:10px;
+}
+.chapter a
+{
+    display:block;
+    text-decoration:none;
+}
+div.menutitle{
+	font-size :20px;
+	color:var(--color-dark-green);
+	font-weight:bold;
+	line-height: 30px;
+	margin-left:55px;
+	position:absolute;
+	bottom:10px;
+}
+	
+}
+h1{
+	text-align:center;
+}
+body{
+	margin-left:0px;
+	margin-right:0px;
+}
+.content{
+	top:60px;
+	bottom:0px;
+	left:0px;
+	right:0px
+
+}
+.menu-second{
+	background-color:#eee;
+}
+.menu-second a:hover {background-color: #ddd}
+.mt-60{
+	margin-top: 60px;
+}
+
+div.opening{
+	width:100%;
+	margin-bottom:20px;
+	margin-top: 20px;
+}
+
+/* principles*/
+#below_nav{
+	margin-left:10px;
+	margin-right:10px;
+	margin-top: 50px;
+}
+h2.principles{
+	
+	font-size: 120%;
+	color: black;
+	margin-bottom: 20px;
+}
+h2.principle_num{
+	padding-top:20px;
+	font-size: 100%;
+	color:darkgrey;
+}
+.verse{
+	color: var(--color-dark-green);
+}
+ul.tract-ul {
+    list-style-type: circle;
+}
+table.principle_circles{
+	margin-left:auto;
+	margin-right:auto;
+	width:90%;
+	margin-bottom: 20px;
+
+	
+}
+td.principle_circles{
+	padding-top: 20px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:20px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: var(--color-light-brown);
+
+}
+
+hr.principle{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+div.newcreation {
+    font-size: 20px;
+
+	color: var(--color-dark-brown);
+    font-weight: bold;
+    line-height: 30px;
+    margin-left: 55px;
+    position: absolute;
+    bottom: 10px;
+}
+
+/*opening index*/
+.intro_text{
+	color:white;
+	margin-bottom: 40px;
+	margin-left: 10px;
+}
+.full_screen{
+	top:0px;
+	background-color:var(--color-light-green);
+}
+
+.toc{
+	font-size: 110%;
+	color: white;
+	line-height:110%;
+	text-decoration: none;
+} 
+
+
+li.toc{
+	color:white;
+}
+
+ol {
+	margin-left:20px;
+}
+h2.toc{
+	margin-left:10px;
+}
+a.toc.opening{
+	color:white;
+	
+}
+a.toc.opening.book{
+	color:black;
+	margin-left:10px;
+	font-size: 120%;
+
+}
+h2.toc{
+	color:var(--color-dark-green);
+	font-size: 120%;
+	z-index: 100;
+}
+
+p.study_end{
+	padding-bottom: 95px;
+}
+.green{
+	color:var(--color-dark-green);
+}
+.brown{
+	color:var(--color-dark-brown);
+}
+.blue{
+	background-color:var(--color-light-green);
+}
+.bold{
+	font-weight:bold;
+}
+.top-left {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.lantern{
+	background-color:var(--color-light-green);
+	
+}
+.cover{
+	margin-bottom: 150px;
+	width:100%;
+}
+img.opening{
+	width:100%;
+}
+img.background{
+	width: 100%;
+	z-index: -1;
+}
+.

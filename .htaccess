@@ -1,0 +1,48 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+     # Remove www from any URLs that have them:
+    RewriteEngine on
+    RewriteCond %{HTTP_HOST} ^www\.
+    RewriteRule ^(.*)$ http://localhost/$1 [R=301,L]
+	
+	# force to http
+	RewriteCond %{HTTP} off
+	RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+	
+	# Change example.com to your domain name
+	RewriteCond %{HTTP_HOST} ^(www.)?localhost$ 
+
+	# Change your_app_name to the subfolder name
+	RewriteCond %{REQUEST_URI} !^/laravel_newcreation/ 
+
+	# Don't change the following two lines. 
+	RewriteCond %{REQUEST_FILENAME} !-f 
+	RewriteCond %{REQUEST_FILENAME} !-d 
+
+	# Change your_app_name to the subfolder name
+	# Change example.com to your domain name
+	RewriteRule ^(.*)$ /laravel_newcreation/$1 
+	RewriteCond %{HTTP_HOST} ^(www.)?localhost$ 
+	RewriteRule ^(/)?$ laravel_newcreation/index.php [L]
+	
+</IfModule>

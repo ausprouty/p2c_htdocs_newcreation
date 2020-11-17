@@ -303,10 +303,17 @@ a.toc.opening.book{
 	font-size: 120%;
 
 }
+a.toc.opening.book.rtl{
+	margin-right:10px;
+}
 h2.toc{
 	color:var(--color-dark-green);
 	font-size: 120%;
 	z-index: 100;
+}
+h2.toc.rtl{
+	margin-right:10px;
+	font-size: 140%;
 }
 
 p.study_end{

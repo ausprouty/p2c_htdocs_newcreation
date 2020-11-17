@@ -26,9 +26,15 @@
             });
             $(".right, .left").remove();
         });
+        router.addRoute(":iso/index", function(iso) {
+            page.findFile(iso + "/opening.html").done(function(page) {
+                slider.slidePage(new HomeView(page).render().$el);
+            });
+            $(".right, .left").remove();
+        });
 
-        router.addRoute("bible", function() {
-            service.findAllBooks().done(function(books) {
+        router.addRoute(":iso/bible", function(iso) {
+            service.findAllBooks(iso).done(function(books) {
                 var booksList = new BookListView(books).render().$el;
                 slider.slidePage(booksList);
 
@@ -36,48 +42,36 @@
                 $(".right, .left").remove();
             });
         });
-        router.addRoute("book/:id", function(id) {
-            service.findBookById(parseInt(id)).done(function(book) {
+        router.addRoute(":iso/book/:id", function(iso,id) {
+            service.findBookById(parseInt(iso, id)).done(function(book) {
                 var chart = service.chapterTable(book);
                 var chaptersList = new ChapterListView(chart).render().$el;
                 slider.slidePage(chaptersList);
             });
         });
-        router.addRoute("chapter/:id", function(id) {
-            service.findChapterById(id).done(function(chapter) {
+        router.addRoute(":iso/chapter/:id", function(iso, id) {
+            service.findChapterById(iso, id).done(function(chapter) {
                 var chapterContent = new ChapterView(chapter).render().$el;
                 slider.slidePage(chapterContent);
             });
         });
-        router.addRoute("newcreation", function() {
+        router.addRoute(":iso/newcreation", function(iso) {
             localStorage.removeItem("ebookChapter");
-            page.findFile("basic.html").done(function(page) {
+            page.findFile(iso + "/basic.html").done(function(page) {
                 slider.slidePage(new EbookView(page).render().$el);
             });
             $(".right, .left").remove();
         });
-        router.addRoute("newchapter/:id", function(id) {
+        router.addRoute(":iso/newchapter/:id", function(iso, id) {
             localStorage.setItem("ebookChapter", id);
             page.findFile("basic.html").done(function(page) {
                 slider.slidePage(new EbookView(page).render().$el);
             });
             $(".right, .left").remove();
         });
-        router.addRoute("principles", function() {
-            page.findFile("principles.html").done(function(page) {
+        router.addRoute(":iso/principles", function(iso) {
+            page.findFile( iso + "/principles.html").done(function(page) {
                 slider.slidePage(new PageView(page).render().$el);
-            });
-            $(".right, .left").remove();
-        });
-        router.addRoute("arabic", function() {
-            page.findFile("arabic.pdf").done(function(page) {
-                slider.slidePage(new PdfView(page).render().$el);
-            });
-            $(".right, .left").remove();
-        });
-        router.addRoute("urdu", function() {
-            page.findFile("urdu.pdf").done(function(page) {
-                slider.slidePage(new PdfView(page).render().$el);
             });
             $(".right, .left").remove();
         });

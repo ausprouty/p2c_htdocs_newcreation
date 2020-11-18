@@ -115,6 +115,9 @@ a.bible-book{
 .ml-10{
 	margin-left:10px;
 }
+.ml-10.rtl{
+	margin-right:10px;
+}
 .bible_book_heading{
 	font-size :30px;
 	color:white;
@@ -138,6 +141,10 @@ a.bible-book{
 table.bible_chapters{
 	width:90%;
 	margin-left:10px;
+	
+}
+table.bible_chapters.rtl{
+	margin-right:20px;
 	
 }
 td.bible_chapter{

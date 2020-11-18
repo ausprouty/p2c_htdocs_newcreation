@@ -43,7 +43,7 @@
             });
         });
         router.addRoute(":iso/book/:id", function(iso,id) {
-            service.findBookById(parseInt(iso, id)).done(function(book) {
+            service.findBookById(iso, parseInt(id)).done(function(book) {
                 var chart = service.chapterTable(book);
                 var chaptersList = new ChapterListView(chart).render().$el;
                 slider.slidePage(chaptersList);

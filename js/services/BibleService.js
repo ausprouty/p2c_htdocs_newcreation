@@ -2,6 +2,27 @@ var BibleService = function() {
     this.initialize = function() {
         var deferred = $.Deferred();
         window.localStorage.setItem(
+            "selectBook",
+            JSON.stringify(
+            {"ar" : "حدد الكتاب",
+                "en": "Select Book",
+                "fa": "کتاب را انتخاب کنید",
+                "ur": "کتاب منتخب کریں"
+            }
+            )
+        );
+        window.localStorage.setItem(
+            "selectChapter",
+            JSON.stringify(
+            {
+                "ar" : "حدد الفصل",
+                "en": "Select Chapter",
+                "fa": "فصل را انتخاب کنید",
+                "ur": "باب منتخب کریں"
+            }
+            )
+        );
+        window.localStorage.setItem(
             "bible",
             JSON.stringify([
             {
@@ -540,20 +561,29 @@ var BibleService = function() {
         return deferred.promise();
     };
     this.setup = function() {
+        var currentVersion = "2.01";
         if (!window.localStorage.getItem("newcreationVersion")) {
             window.localStorage.clear();
-            window.localStorage.setItem("newcreationVersion", "2.01");
+            window.localStorage.setItem("newcreationVersion", currentVersion);
         }
-        this.findChapterById("book1--chapter1.txt");
+        if (window.localStorage.getItem("newcreationVersion") !== currentVersion){
+            window.localStorage.clear();
+            window.localStorage.setItem("newcreationVersion", currentVersion);
+        }
+        this.findChapterById( 'en' , "en--book1--chapter1.txt");
     };
-    this.findBookById = function(id) {
+    this.findBookById = function(iso, id) {
         var deferred = $.Deferred(),
             bibles = JSON.parse(window.localStorage.getItem("bible"));
+            select_chapter = JSON.parse(window.localStorage.getItem("selectChapter"));
         (book = null), (chapters = null);
         l = bibles.length;
         for (var i = 0; i < l; i++) {
             if (bibles[i].bid === id) {
                 book = bibles[i];
+                book ['book_name_selected'] = bibles[i]['book_name_' + iso];
+                book['select_chapter'] = select_chapter[iso];
+                book['iso']= iso;
                 break;
             }
         }
@@ -561,19 +591,24 @@ var BibleService = function() {
         return deferred.promise();
     };
     this.chapterTable = function(book) {
+        var result = {};
+        result.iso = book.iso;
+        result.bid = book.bid;
+        result.dir = setDirection(book.iso);
         var chap = book.number_of_chapters;
         var row = "";
         var table =
-            '<div class = "bible_background"> <h1 class = "bible_book_heading" align = "center">' +
-            book.book_name +
-            '</h1><p class ="bible_select_chapters" align = "center" >Select Chapter<p><table class = "bible_chapters"><tr>';
+            '<div class = "bible_background ' + result.dir + '" dir="' +  result.dir +'" > <h1 class = "bible_book_heading" align = "center">' +
+            book.book_name_selected +
+            '</h1><p class ="bible_select_chapters" align = "center" >'+ book.select_chapter + '</p>'  +
+            '<table class = "bible_chapters '   + result.dir + '"><tr>';
         var chapter = "";
         for (var i = 1; i <= chap; i++) {
-            chapter = "book" + book.bid + "--chapter" + i + ".txt";
+            link = '#' + book.iso +'/chapter/' +  book.iso + "--book" + book.bid + "--chapter" + i + ".txt";
             row =
                 table +
-                '<td class = "bible_chapter"><a class = "bible_link" href = "#chapter/' +
-                chapter +
+                '<td class = "bible_chapter"><a class = "bible_link" href = "' +
+                link +
                 '">' +
                 i +
                 "</a></td>";
@@ -594,7 +629,8 @@ var BibleService = function() {
         }
         row = table.substring(0, table.length - 5) + "</table>";
         table = row + "</div>";
-        return table;
+        result.table = table;
+        return result;
     };
 
     this.findBookByName = function(searchKey) {
@@ -620,18 +656,24 @@ var BibleService = function() {
         books = JSON.parse(window.localStorage.getItem("bible"));
         var len = books.length;
         for (var i=0; i< len;  i++){
-            books[i]['book_name_selected'] = books[i][ 'book_name_' + iso]
+            books[i]['book_name_selected'] = books[i][ 'book_name_' + iso];
+            books[i]['link'] = '#' + iso +'/book/' + books[i]['bid'];
         }
-        
-        deferred.resolve(books);
+        var result = {};
+        result.books = books;
+        result.dir = setDirection(iso);
+        // find title
+        var title = JSON.parse(window.localStorage.getItem("selectBook"));
+        result.title = title[iso];
+    
+        deferred.resolve(result);
         return deferred.promise();
     };
-    this.findChapterById = function(id) {
+    this.findChapterById = function(iso, id) {
         var deferred = $.Deferred();
         //todo: fix this
-        return;
-        if (!GetBibleChapterFromStorage("bible_" + id)) {
-            // Do I need to get entire Bible or only this book?
+        if (!GetBibleChapterFromStorage(id)) {
+           /* // Do I need to get entire Bible or only this book?
            if (
                 window.localStorage.getItem("bible_books_downloaded") === null
             ) {
@@ -641,14 +683,21 @@ var BibleService = function() {
             } else {
                 var book_name = id.split("--")[0];
             }
-			var url = window.location.href;
+            */
+            var book_name = id.split("--")[0] + '--' + id.split("--")[1] + '.zip';
+            var url = window.location.href;
+            var website = '';
 			console.log('url is ' + url);
-			var i = url.indexOf('#');
-			var website = url.substring(0,i) + 'bible/';
+            var i = url.indexOf('#');
+            if (i != -1){
+                website = url.substring(0,i)  + 'bible/' + book_name;
+            }
+            else{
+                website = url  + 'bible/' + book_name;
+            }
 			console.log('website is ' + website);
-			console.log(website + book_name);
             JSZipUtils.getBinaryContent(
-                website + book_name,
+                website ,
                 function(err, data) {
                     if (err) {
                         chapter = "There was an error attempting to download " + book_name;
@@ -678,6 +727,14 @@ var BibleService = function() {
         return deferred.promise();
     };
 };
+
+function setDirection(iso){
+    var dir = 'rtl';
+    if (iso == 'en'){
+        dir = 'ltr';
+    }
+    return dir;
+}
 
 function SetBibleChapterToStorage(bible_id, blob) {
     // need to compress more so use

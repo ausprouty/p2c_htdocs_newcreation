@@ -11,6 +11,7 @@ var BookListView = function (books) {
         this.render();
     }
 	this.render = function() {
+        console.log (books);
         this.$el.html(this.template(books));
         return this;
     };

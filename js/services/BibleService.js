@@ -570,7 +570,6 @@ var BibleService = function() {
             window.localStorage.clear();
             window.localStorage.setItem("newcreationVersion", currentVersion);
         }
-        this.findChapterById( 'en' , "en--book1--chapter1.txt");
     };
     this.findBookById = function(iso, id) {
         var deferred = $.Deferred(),
@@ -671,57 +670,58 @@ var BibleService = function() {
     };
     this.findChapterById = function(iso, id) {
         var deferred = $.Deferred();
-        //todo: fix this
+        var chapter = {}
+        // need to cut langauge off of id to get page
+        chapter.page = id.substring(4);
+        chapter.dir = setDirection(iso);
+        chapter.iso = iso;
         if (!GetBibleChapterFromStorage(id)) {
-           /* // Do I need to get entire Bible or only this book?
-           if (
-                window.localStorage.getItem("bible_books_downloaded") === null
-            ) {
-                var book_name = "all";
-               console.log("I am going to get all book");
-                window.localStorage.setItem("bible_books_downloaded", "all");
-            } else {
-                var book_name = id.split("--")[0];
-            }
-            */
+            // I am downloading a full book right now
             var book_name = id.split("--")[0] + '--' + id.split("--")[1] + '.zip';
             var url = window.location.href;
             var website = '';
 			console.log('url is ' + url);
             var i = url.indexOf('#');
             if (i != -1){
-                website = url.substring(0,i)  + 'bible/' + book_name;
+                website = url.substring(0,i)  + 'bible/book/' + book_name;
             }
             else{
-                website = url  + 'bible/' + book_name;
+                website = url  + 'bible/book/' + book_name;
             }
 			console.log('website is ' + website);
             JSZipUtils.getBinaryContent(
                 website ,
                 function(err, data) {
                     if (err) {
-                        chapter = "There was an error attempting to download " + book_name;
+                        chapter.text = "There was an error attempting to download " + book_name;
                         deferred.resolve(chapter);
                     }
-
+                    // uncompress data and store in local storage, but use LZString to compress each chapter as much as possible
                     JSZip.loadAsync(data).then(function(zip) {
                         Object.keys(zip.files).forEach(function(file_name) {
                             zip.file(file_name)
                                 .async("text")
                                 .then(function(file_content) {
                                     compressed = SetBibleChapterToStorage(
-                                        "bible_" + file_name,
+                                        file_name,
                                         file_content
                                     );
 									var uncompressed = LZString.decompress(compressed);
                                     deferred.resolve(uncompressed);
                                 });
                         });
+                       
+                    }).then(function(){
+                        alert (id + ' after get new');
+                        chapter.text = GetBibleChapterFromStorage(id);
+                        console.log (chapter);
+                        deferred.resolve(chapter);
                     });
                 }
             );
         } else {
-            chapter = GetBibleChapterFromStorage("bible_" + id);
+            chapter.text = GetBibleChapterFromStorage(id);
+            console.log (chapter);
             deferred.resolve(chapter);
         }
         return deferred.promise();

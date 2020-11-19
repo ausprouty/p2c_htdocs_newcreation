@@ -5,6 +5,8 @@ var ChapterView = function(chapter) {
 	};
 
 	this.render = function() {
+		console.log ('in render');
+		console.log (chapter);
 		 var content = this.template(chapter);
 		this.$el.html(content);
 		return this;

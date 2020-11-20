@@ -134,6 +134,14 @@ a.bible-book{
 	padding-top: 60px;
 	
 }
+.bible_book_rtl{
+	font-size :30px;
+	color:black;
+	font-weight:bold;
+	line-height: 30px;
+	padding-top: 60px;
+	
+}
 .bible_select_chapters{
 	color:white;
 	font-size: 15px;
@@ -195,8 +203,8 @@ body{
 .content{
 	top:60px;
 	bottom:0px;
-	left:0px;
-	right:0px
+	left:10px;
+	right:10px;
 
 }
 .menu-second{

@@ -207,6 +207,36 @@ body{
 	right:10px;
 
 }
+
+
+button {
+	margin-top: 20px;
+	color: black;
+	font-weight: bold;
+	border-radius: 6px;
+	text-align: center;
+	background-color:#d1963d;
+	height: 48px;
+  }
+
+div.download-banner{
+	text-align:center;
+}
+div.download-banner.green{
+	background-color: var(--color-dark-green);
+}
+
+#myProgress {
+	width: 100%;
+	background-color: grey;
+}
+  
+#myBar {
+	width: 1%;
+	height: 30px;
+	background-color: green;
+}
+
 .menu-second{
 	background-color:#eee;
 }

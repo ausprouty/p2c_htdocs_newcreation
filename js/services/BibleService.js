@@ -593,6 +593,9 @@ var BibleService = function() {
         var result = {};
         result.iso = book.iso;
         result.bid = book.bid;
+        result.chapters = book.number_of_chapters;
+        result.book_name = book.book_name_selected;
+        result.file_name = book.iso + '--book' + book.bid;
         result.dir = setDirection(book.iso);
         var chap = book.number_of_chapters;
         var row = "";
@@ -669,7 +672,7 @@ var BibleService = function() {
         deferred.resolve(result);
         return deferred.promise();
     };
-    this.findChapterById = function(iso, id) {
+    this.findChapterById = function(scope, iso, id, number_of_files) {
         var deferred = $.Deferred();
         var chapter = {}
         // need to cut langauge off of id to get page
@@ -679,30 +682,47 @@ var BibleService = function() {
         chapter.id = id;
         console.log ('I am looking for ' + id);
         if (!GetBibleChapterFromStorage(id)) {
-            console.log ('I did not find  ' + id + 'in local storage');
-            // I am downloading a full book right now
-            var book_name = id.split("--")[0] + '--' + id.split("--")[1] + '.zip';
+            console.log ('I did not find  ' + id + ' in local storage');
+            // setup progress meter from https://www.w3schools.com/howto/howto_js_progressbar.asp
+            var elem = null;
             var url = window.location.href;
-            var website = '';
-			console.log('url is ' + url);
+            var website = url;
+            var file_name = id;
             var i = url.indexOf('#');
             if (i != -1){
-                website = url.substring(0,i)  + 'bible/book/' + book_name;
+                website = url.substring(0,i);
+            }
+            if (scope == 'bible'){
+                file_name = iso + '--bible.zip';
+                url = website + 'bible/all/' + file_name;
+                elem = document.getElementById("download-bible")
+            }
+            else if (scope == 'book'){
+                file_name = id + '.zip';
+                url = website + 'bible/book/' + file_name;
+                elem = document.getElementById("download-book");
             }
             else{
-                website = url  + 'bible/book/' + book_name;
+                file_name = id;
+                url = website + 'bible/chapter/' + file_name;
             }
-			console.log('website is ' + website);
+            if (elem !== null){
+                elem.innerHTML = 'Downloading';
+                var width = 1;
+            }
+            console.log('url is ' + url);
+             // see also https://stuk.github.io/jszip/documentation/howto/read_zip.html
             JSZipUtils.getBinaryContent(
-                website ,
+                url ,
                 function(err, data) {
                     if (err) {
-                        chapter.text = "There was an error attempting to download " + book_name;
+                        chapter.text = "There was an error attempting to download " + file_name;
                         deferred.resolve(chapter);
                     }
                     // uncompress data and store in local storage, but use LZString to compress each chapter as much as possible
                     JSZip.loadAsync(data)
                     .then(function(zip) {
+                        var count = 1;
                         Object.keys(zip.files).forEach(function(file_name) {
                             zip.file(file_name)
                                 .async("text")
@@ -711,21 +731,27 @@ var BibleService = function() {
                                         file_name,
                                         file_content
                                     );
-                                    console.log ("saving " + file_name);
+                                    if (elem !== null){
+                                        width = count / number_of_files * 100;
+                                        elem.style.width = width + "%"
+                                    }
+                                    console.log (file_name);
+                                    // this will resolve for chapter
 									if (file_name == id){
-                                        chapter.text = file_content;
+                                        chapter.text = file_content; 
+                                    }
+                                    if (count == number_of_files){
+                                        if (elem !== null){
+                                            elem.innerHTML = 'Finished Downloading';
+                                        }
                                         deferred.resolve(chapter);
                                     }
+                                    count++;
+                                    // how resolve for book?
                                 });
                         });
                        
                     })
-                   // .then(function(){
-                   //     console.log (id + ' after get new given to  GetBibleChapterFromStorage');
-                   //     chapter.text = GetBibleChapterFromStorage(id);
-                   //     console.log (chapter);
-                   //     deferred.resolve(chapter);
-                    //});
                 }
             );
         } else {
@@ -737,6 +763,24 @@ var BibleService = function() {
         return deferred.promise();
     };
 };
+function downloadBible(iso){
+    var service = new BibleService;
+    for (var i = 1; i <67; i++){
+        service.downloadBook(book);
+        setTimeout();
+
+    }
+    ('bible',iso, iso, 66).done(function() {
+        alert (iso + " Bible Downloaded");
+    });
+
+}
+function downloadBook(iso, book, number_of_chapters){
+    var service = new BibleService;
+    service.findChapterById('book',iso,book, number_of_chapters).done(function() {
+    });
+
+}
 
 function setDirection(iso){
     var dir = 'rtl';

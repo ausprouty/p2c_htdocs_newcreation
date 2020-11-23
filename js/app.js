@@ -50,7 +50,7 @@
             });
         });
         router.addRoute(":iso/chapter/:id", function(iso, id) {
-            service.findChapterById(iso, id).done(function(chapter) {
+            service.findChapterById('chapter',iso, id).done(function(chapter) {
                 var chapterContent = new ChapterView(chapter).render().$el;
                 slider.slidePage(chapterContent);
             });

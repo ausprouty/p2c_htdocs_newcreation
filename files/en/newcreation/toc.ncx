@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+<head>
+<meta content="0c159d12-f5fe-4323-8194-f5c652b89f5c" name="dtb:uid"/>
+<meta content="2" name="dtb:depth"/>
+<meta content="calibre (0.8.68)" name="dtb:generator"/>
+<meta content="0" name="dtb:totalPageCount"/>
+<meta content="0" name="dtb:maxPageNumber"/>
+</head>
+<docTitle>
+<text>NEW CREATION BOOK FOR MUSLIMS</text>
+</docTitle>
+<navMap>
+<navPoint id="id8" playOrder="0">
+<navLabel>
+<text>Soil Testing</text>
+</navLabel>
+<content src="newcreation/soil.html"/>
+</navPoint>
+<navPoint id="id5" playOrder="1">
+<navLabel>
+<text>The Straight Path of the New Creation</text>
+</navLabel>
+<content src="newcreation/path.html"/>
+</navPoint>
+
+<navPoint id="id7" playOrder="2">
+<navLabel>
+<text>The Prayer Life of a New Creation Muslim</text>
+</navLabel>
+<content src="newcreation/prayer.html"/>
+</navPoint>
+<navPoint id="id1" playOrder="3">
+<navLabel>
+<text>The New Creation Confession</text>
+</navLabel>
+<content src="newcreation/confession.html"/>
+</navPoint>
+<navPoint id="id6" playOrder="4">
+<navLabel>
+<text>The New Creation Pilgrimage</text>
+</navLabel>
+<content src="newcreation/pilgrimage.html"/>
+</navPoint>
+<navPoint id="id3" playOrder="5">
+<navLabel>
+<text>How to Start a House Masjid and a Messianic Madrasa for New Creation Muslim</text>
+</navLabel>
+<content src="newcreation/house.html"/>
+</navPoint>
+<navPoint id="id2" playOrder="6">
+<navLabel>
+<text>Glossary</text>
+</navLabel>
+<content src="newcreation/glossary.html"/>
+</navPoint>
+<navPoint id="id4" playOrder="7">
+<navLabel>
+<text>Notes</text>
+</navLabel>
+<content src="newcreation/notes.html"/>
+</navPoint>
+
+</navMap></ncx>

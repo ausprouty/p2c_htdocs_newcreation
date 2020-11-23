@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+<head>
+<meta content="0c159d12-f5fe-4323-8194-f5c652b89f5c" name="dtb:uid"/>
+<meta content="2" name="dtb:depth"/>
+<meta content="calibre (0.8.68)" name="dtb:generator"/>
+<meta content="0" name="dtb:totalPageCount"/>
+<meta content="0" name="dtb:maxPageNumber"/>
+</head>
+<docTitle>
+<text>کتاب ِآفرینش جدیدبرائے مسلمانان</text>
+</docTitle>
+<navMap>
+<navPoint id="id8" playOrder="0">
+<navLabel>
+<text> آزمایش زمینی</text>
+</navLabel>
+<content src="newcreation/soil.html"/>
+</navPoint>
+<navPoint id="id5" playOrder="1">
+<navLabel>
+<text> مسیر مستقیم به سوی خلقت جدید </text>
+</navLabel>
+<content src="newcreation/path.html"/>
+</navPoint>
+
+<navPoint id="id7" playOrder="2">
+<navLabel>
+<text> زندگی دعای مسلمان تازه ایجاد شده</text>
+</navLabel>
+<content src="newcreation/prayer.html"/>
+</navPoint>
+<navPoint id="id1" playOrder="3">
+<navLabel>
+<text> اعتراف خلاق جدید </text>
+</navLabel>
+<content src="newcreation/confession.html"/>
+</navPoint>
+<navPoint id="id6" playOrder="4">
+<navLabel>
+<text> بازدید از آفرینش جدید</text>
+</navLabel>
+<content src="newcreation/pilgrimage.html"/>
+</navPoint>
+<navPoint id="id3" playOrder="5">
+<navLabel>
+<text>در خانه مسلمانان تازه ایجاد شده است </text>
+</navLabel>
+<content src="newcreation/house.html"/>
+</navPoint>
+<navPoint id="id2" playOrder="6">
+<navLabel>
+<text>فرهنگ لغت</text>
+</navLabel>
+<content src="newcreation/glossary.html"/>
+</navPoint>
+<navPoint id="id4" playOrder="7">
+<navLabel>
+<text>شرح</text>
+</navLabel>
+<content src="newcreation/notes.html"/>
+</navPoint>
+
+</navMap></ncx>

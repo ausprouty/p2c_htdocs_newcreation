@@ -1,3 +1,6 @@
+const STANDARD_DELAY = 1000;
+
+
 var BibleService = function() {
     this.initialize = function() {
         var deferred = $.Deferred();
@@ -581,7 +584,7 @@ var BibleService = function() {
             if (bibles[i].bid === id) {
                 book = bibles[i];
                 book ['book_name_selected'] = bibles[i]['book_name_' + iso];
-                book['select_chapter'] = select_chapter[iso];
+                book['select_chapter'] = select_chapter[iso]; // 'Select Chapter'
                 book['iso']= iso;
                 break;
             }
@@ -685,26 +688,15 @@ var BibleService = function() {
             console.log ('I did not find  ' + id + ' in local storage');
             // setup progress meter from https://www.w3schools.com/howto/howto_js_progressbar.asp
             var elem = null;
-            var url = window.location.href;
-            var website = url;
-            var file_name = id;
-            var i = url.indexOf('#');
-            if (i != -1){
-                website = url.substring(0,i);
-            }
-            if (scope == 'bible'){
-                file_name = iso + '--bible.zip';
-                url = website + 'bible/all/' + file_name;
-                elem = document.getElementById("download-bible")
-            }
-            else if (scope == 'book'){
+            var clean_url = _clean_url();
+            if (scope == 'book'){
                 file_name = id + '.zip';
-                url = website + 'bible/book/' + file_name;
+                url =clean_url + 'bible/book/' + file_name;
                 elem = document.getElementById("download-book");
             }
             else{
                 file_name = id;
-                url = website + 'bible/chapter/' + file_name;
+                url = clean_url + 'bible/chapter/' + file_name;
             }
             if (elem !== null){
                 elem.innerHTML = 'Downloading';
@@ -762,19 +754,91 @@ var BibleService = function() {
         }
         return deferred.promise();
     };
-};
-function downloadBible(iso){
-    var service = new BibleService;
-    for (var i = 1; i <67; i++){
-        service.downloadBook(book);
-        setTimeout();
+    this.downloadAndStoreBook = function(file_name,i, iso){
+        var deferred = $.Deferred();
+        result = {};
+        var clean_url = _clean_url();
+        url =clean_url + 'bible/book/' + file_name;
+        var book = this.findBookById(iso, i)
+        var number_of_chapters = book.number_of_chapters;
+        JSZipUtils.getBinaryContent(
+            url ,
+            function(err, data) {
+                if (err) {
+                    result.text = "There was an error attempting to download " + file_name;
+                    deferred.resolve(result);
+                }
+                // uncompress data and store in local storage using LZString to compress each chapter as much as possible
+                JSZip.loadAsync(data)
+                .then(function(zip) {
+                    var count = 1;
+                    Object.keys(zip.files).forEach(function(file_name) {
+                        zip.file(file_name)
+                            .async("text")
+                            .then(function(file_content) {
+                                compressed = SetBibleChapterToStorage(
+                                    file_name,
+                                    file_content
+                                );
+                                if (count == number_of_chapters){
+                                    if (i < 66){ 
+                                        elem = document.getElementById("download-bible");
+                                        width = i / 66 * 100;
+                                        elem.style.width = width + "%";
+                                    }
+                                    else{
+                                        elem.innerHTML = 'Downloaded';
+                                    }
+                                    result.text = 'success';
+                                    deferred.resolve(result);
+                                }
+                            });
+                    });
+                })
+            }
+        );
 
+    };
+};
+function _clean_url(){
+    var url = window.location.href;
+    var website = url;
+    var i = url.indexOf('#');
+    if (i != -1){
+        website = url.substring(0,i);
     }
-    ('bible',iso, iso, 66).done(function() {
-        alert (iso + " Bible Downloaded");
-    });
+    return website;
 
 }
+function count(num){
+    setTimeout(function(){  
+        mySwiper.update();
+        console.log("Test");
+        if(num > 0) count(num - 1);
+    }, 500);
+}
+function downloadBible(iso){
+    elem = document.getElementById("download-bible");
+    elem.innerHTML = 'DownloadGGGG';
+    var service = new BibleService;
+    var book = '';
+    for (var i = 1; i <8; i++){
+        book = iso + '--book' + i + '.zip';
+        setTimeout(() => {
+            sendRequest(
+              book,
+              iso,
+              i,
+            );
+          }, STANDARD_DELAY);
+        }
+    }
+    
+    function sendRequest(book, iso, i){
+        console.log (book + '  '+ iso)
+
+    }
+
 function downloadBook(iso, book, number_of_chapters){
     var service = new BibleService;
     service.findChapterById('book',iso,book, number_of_chapters).done(function() {

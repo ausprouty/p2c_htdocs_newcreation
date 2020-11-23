@@ -1,0 +1,100 @@
+﻿:root {
+    --color-black:black;
+    --color-dark-green:#09716a;
+    --color-light-green:#00b8bc;
+    --color-dark-brown:#654014;
+    --color-light-brown:#ae6b25;
+    --color-tan:#e1a331;
+}
+
+.page{
+	background-color:var(--color-dark-green);
+	
+}
+	
+body  {
+	font-family: arial;
+}
+h1.title{
+	font-size: 150%;
+	color: var(--color-dark-brown);
+	line-height:150%;
+	margin-bottom: 20px;
+	
+}
+h2.subtitle{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 125%;
+	color:var(--color-dark-brown);
+	line-height:125%;
+	
+}
+p.text{
+	margin-left:10px;
+    margin-right: 10px;
+	margin-bottom: 20px;
+	font-size: 100%;
+	color: black;
+}
+p.poem{
+	margin-left:10px;
+    margin-right: 10px;
+	margin-bottom: 0px;
+	font-size: 100%;
+	color: black;
+}
+p.note{
+	margin-left:10px;
+    margin-right: 10px;
+	margin-bottom: 10px;
+	font-size: 100%;
+	
+}
+.note_number{
+	vertical-align: super;
+	font-size: 85%;
+	color:var(--color-dark-brown);
+}
+li{
+	padding-top: 20px;
+}
+li.last{
+	padding-bottom: 20px;
+}
+.toc{
+	font-size: 120%;
+	color: white;
+	line-height:120%;
+	text-decoration: none;
+} 
+div.path_index{
+	
+	background-color: var(--color-light-brown);
+	margin-top: -20px;
+}
+h2.toc.path{
+	text-align:center;
+	color:white;
+	padding-top:40px;
+	font-size:150%;
+
+}
+a.note{
+	vertical-align: super;
+	font-size: 85%;
+	color: var(--color-dark-brown);
+	text-decoration: none;
+	
+}
+a.return{
+	font-size: 85%;
+	color:var(--color-dark-brown);
+	text-decoration: none;
+	
+}
+.top-left {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}

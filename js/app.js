@@ -70,7 +70,7 @@
             $(".right, .left").remove();
         });
         router.addRoute(":iso/principles", function(iso) {
-            page.findFile( iso + "/principles.html").done(function(page) {
+            page.findFile( iso + "/principles.html", iso).done(function(page) {
                 slider.slidePage(new PageView(page).render().$el);
             });
             $(".right, .left").remove();

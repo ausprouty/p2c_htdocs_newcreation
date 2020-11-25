@@ -1,6 +1,6 @@
 var PageService = function() {
   this.initialize = function() {};
-  this.findFile = function(name) {
+  this.findFile = function(name,iso) {
     var deferred = $.Deferred();
     var fileName = "./files/" + name;
     var pagefile = {
@@ -12,6 +12,7 @@ var PageService = function() {
       url: pagefile.file,
       success: function(result) {
         pagefile.text = result;
+        pagefile.iso = iso
         deferred.resolve(pagefile);
       }
     });

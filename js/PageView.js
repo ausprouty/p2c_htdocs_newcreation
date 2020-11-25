@@ -1,4 +1,4 @@
-var PageView = function(page) {
+var PageView = function(page, iso) {
 
 	this.initialize = function() {
 		this.$el = $('<div/>');

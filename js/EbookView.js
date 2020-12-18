@@ -18,8 +18,10 @@ var EbookView = function(page) {
       spread: "always"
     });
     localStorage.setItem("currentSectionIndex", currentSectionIndex);
-    rendition.display(currentSectionIndex);
+    console.log ('currentSectionIndex');
     console.log (currentSectionIndex);
+    rendition.display(currentSectionIndex);
+    
 
     book.ready.then(() => {
       var next = document.getElementById("next");
@@ -139,8 +141,11 @@ var EbookView = function(page) {
 
         docfrag.appendChild(option);
       });
-
-      $select.appendChild(docfrag);
+      // if added by Bob because docfrag not always defined
+      if (typeof docfrag !== undefined){
+        $select.appendChild(docfrag);
+      }
+      
 
       $select.onchange = function() {
         var index = $select.selectedIndex,

@@ -1,0 +1,126 @@
+.calibre {
+    display: block;
+    font-size: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 5pt
+    }
+.calibre1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0.67em 0
+    }
+.calibre2 {
+    display: block;
+    font-family: arial;
+    font-size: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 5pt
+    }
+.calibre3 {
+    display: block
+    }
+.calibre4 {
+    color: gray;
+    display: block;
+    height: 2px;
+    margin: 0.5em auto;
+    border: currentColor inset 1px
+    }
+.calibre5 {
+    display: block;
+    list-style-type: decimal;
+    margin-bottom: 1em;
+    margin-right: 0;
+    margin-top: 1em
+    }
+.calibre6 {
+    display: list-item
+    }
+.note {
+    color: #654014;
+    font-size: 0.83333em;
+    text-decoration: none;
+    vertical-align: super
+    }
+.note_number {
+    color: #654014;
+    font-size: 0.83333em;
+    vertical-align: super
+    }
+.note1 {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 10px;
+    margin-top: 1em
+    }
+.note2 {
+    color: #654014;
+    font-size: 0.775em;
+    line-height: 1.2;
+    text-decoration: none;
+    vertical-align: super
+    }
+.path_index {
+    background-color: #ae6b25;
+    display: block;
+    margin-top: -20px
+    }
+.rtl {
+    color: black;
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0;
+    margin-top: 1em;
+    text-align: center
+    }
+.rtl1 {
+    display: block;
+    font-size: 1.66667em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0.83em 0
+    }
+.rtl2 {
+    color: black;
+    display: block;
+    font-size: 1em;
+    margin-bottom: 20px;
+    margin-top: 1em
+    }
+.title {
+    color: #654014;
+    display: block;
+    font-size: 1.66667em;
+    font-weight: bold;
+    line-height: 150%;
+    margin: 0.67em 0 20px
+    }
+.toc {
+    color: white;
+    display: block;
+    font-size: 1.66667em;
+    font-weight: bold;
+    line-height: 1.2;
+    padding-top: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0.83em 0
+    }
+.toc1 {
+    color: white;
+    display: list-item;
+    font-size: 1.29167em;
+    line-height: 1.2;
+    padding-top: 20px;
+    text-decoration: none
+    }
+.toc2 {
+    color: white;
+    font-size: 1em;
+    line-height: 120%;
+    text-decoration: none
+    }

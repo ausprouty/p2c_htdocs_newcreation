@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="3.0" prefix="calibre: https://calibre-ebook.com">
+  <metadata xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dc:title id="id">NewCreation</dc:title>
+    <dc:creator id="id-1">Phil Goble</dc:creator>
+    <dc:identifier id="uuid_id">uuid:34d97339-f50e-4377-97d7-0316950c3bc9</dc:identifier>
+    <dc:identifier>calibre:34d97339-f50e-4377-97d7-0316950c3bc9</dc:identifier>
+    <dc:contributor id="id-2">calibre (4.9.1) [https://calibre-ebook.com]</dc:contributor>
+    <dc:language>en</dc:language>
+    <dc:date>0101-01-01T00:00:00+00:00</dc:date>
+    <meta name="cover" content="cover"/>
+    <meta refines="#id" property="title-type">main</meta>
+    <meta refines="#id" property="file-as">NewCreation</meta>
+    <meta property="role" refines="#id-1" scheme="marc:relators">aut</meta>
+    <meta property="file-as" refines="#id-1">Goble, Phil</meta>
+    <meta property="role" refines="#id-2" scheme="marc:relators">bkp</meta>
+    <meta property="calibre:timestamp" scheme="dcterms:W3CDTF">2019-12-10T22:50:31Z</meta>
+    <meta property="dcterms:modified" scheme="dcterms:W3CDTF">2020-02-09T22:47:09Z</meta>
+  </metadata>
+  <manifest>
+    <item href="titlepage.xhtml" id="titlepage" media-type="application/xhtml+xml" properties="svg calibre:title-page"/>
+    <item href="toc.html" id="html" media-type="application/xhtml+xml"/>
+    <item href="soil_split_000.html" id="html116" media-type="application/xhtml+xml" properties="svg"/>
+    <item href="soil_split_001.html" id="html115" media-type="application/xhtml+xml"/>
+    <item href="soil_split_002.html" id="html114" media-type="application/xhtml+xml"/>
+    <item href="soil_split_003.html" id="html113" media-type="application/xhtml+xml"/>
+    <item href="soil_split_004.html" id="html112" media-type="application/xhtml+xml"/>
+    <item href="soil_split_005.html" id="html111" media-type="application/xhtml+xml"/>
+    <item href="soil_split_006.html" id="html110" media-type="application/xhtml+xml"/>
+    <item href="soil_split_007.html" id="html19" media-type="application/xhtml+xml"/>
+    <item href="soil_split_008.html" id="html18" media-type="application/xhtml+xml"/>
+    <item href="soil_split_009.html" id="html17" media-type="application/xhtml+xml"/>
+    <item href="soil_split_010.html" id="html16" media-type="application/xhtml+xml"/>
+    <item href="soil_split_011.html" id="html15" media-type="application/xhtml+xml"/>
+    <item href="soil_split_012.html" id="html14" media-type="application/xhtml+xml"/>
+    <item href="soil_split_013.html" id="html13" media-type="application/xhtml+xml"/>
+    <item href="soil_split_014.html" id="html12" media-type="application/xhtml+xml"/>
+    <item href="soil_split_015.html" id="html11" media-type="application/xhtml+xml"/>
+    <item href="path_split_000.html" id="html220" media-type="application/xhtml+xml" properties="svg"/>
+    <item href="path_split_001.html" id="html219" media-type="application/xhtml+xml"/>
+    <item href="path_split_002.html" id="html218" media-type="application/xhtml+xml"/>
+    <item href="path_split_003.html" id="html217" media-type="application/xhtml+xml"/>
+    <item href="path_split_004.html" id="html216" media-type="application/xhtml+xml"/>
+    <item href="path_split_005.html" id="html215" media-type="application/xhtml+xml"/>
+    <item href="path_split_006.html" id="html214" media-type="application/xhtml+xml"/>
+    <item href="path_split_007.html" id="html213" media-type="application/xhtml+xml"/>
+    <item href="path_split_008.html" id="html212" media-type="application/xhtml+xml"/>
+    <item href="path_split_009.html" id="html211" media-type="application/xhtml+xml"/>
+    <item href="path_split_010.html" id="html210" media-type="application/xhtml+xml"/>
+    <item href="path_split_011.html" id="html29" media-type="application/xhtml+xml"/>
+    <item href="path_split_012.html" id="html28" media-type="application/xhtml+xml"/>
+    <item href="path_split_013.html" id="html27" media-type="application/xhtml+xml"/>
+    <item href="path_split_014.html" id="html26" media-type="application/xhtml+xml"/>
+    <item href="path_split_015.html" id="html25" media-type="application/xhtml+xml"/>
+    <item href="path_split_016.html" id="html24" media-type="application/xhtml+xml"/>
+    <item href="path_split_017.html" id="html23" media-type="application/xhtml+xml"/>
+    <item href="path_split_018.html" id="html22" media-type="application/xhtml+xml"/>
+    <item href="path_split_019.html" id="html21" media-type="application/xhtml+xml"/>
+    <item href="prayer_split_000.html" id="html37" media-type="application/xhtml+xml" properties="svg"/>
+    <item href="prayer_split_001.html" id="html36" media-type="application/xhtml+xml"/>
+    <item href="prayer_split_002.html" id="html35" media-type="application/xhtml+xml"/>
+    <item href="prayer_split_003.html" id="html34" media-type="application/xhtml+xml"/>
+    <item href="prayer_split_004.html" id="html33" media-type="application/xhtml+xml"/>
+    <item href="prayer_split_005.html" id="html32" media-type="application/xhtml+xml"/>
+    <item href="prayer_split_006.html" id="html31" media-type="application/xhtml+xml"/>
+    <item href="confession_split_000.html" id="html43" media-type="application/xhtml+xml" properties="svg"/>
+    <item href="confession_split_001.html" id="html42" media-type="application/xhtml+xml"/>
+    <item href="confession_split_002.html" id="html41" media-type="application/xhtml+xml"/>
+    <item href="pilgrimage_split_000.html" id="html57" media-type="application/xhtml+xml" properties="svg"/>
+    <item href="pilgrimage_split_001.html" id="html56" media-type="application/xhtml+xml"/>
+    <item href="pilgrimage_split_002.html" id="html55" media-type="application/xhtml+xml"/>
+    <item href="pilgrimage_split_003.html" id="html54" media-type="application/xhtml+xml"/>
+    <item href="pilgrimage_split_004.html" id="html53" media-type="application/xhtml+xml"/>
+    <item href="pilgrimage_split_005.html" id="html52" media-type="application/xhtml+xml"/>
+    <item href="pilgrimage_split_006.html" id="html51" media-type="application/xhtml+xml"/>
+    <item href="notes.html" id="html6" media-type="application/xhtml+xml" properties="svg"/>
+    <item href="house_split_000.html" id="html73" media-type="application/xhtml+xml" properties="svg"/>
+    <item href="house_split_001.html" id="html72" media-type="application/xhtml+xml"/>
+    <item href="house_split_002.html" id="html71" media-type="application/xhtml+xml"/>
+    <item href="glossary.html" id="html8" media-type="application/xhtml+xml" properties="svg"/>
+    <item href="page_styles.css" id="page_css" media-type="text/css"/>
+    <item href="stylesheet.css" id="css" media-type="text/css"/>
+    <item href="confession.png" id="added4" media-type="image/png"/>
+    <item href="cover1.jpeg" id="cover" media-type="image/jpeg" properties="cover-image"/>
+    <item href="glossary.png" id="added8" media-type="image/png"/>
+    <item href="housemasjid.png" id="added7" media-type="image/png"/>
+    <item href="notes.png" id="added6" media-type="image/png"/>
+    <item href="pilgrimage.png" id="added5" media-type="image/png"/>
+    <item href="prayerlife.png" id="added3" media-type="image/png"/>
+    <item href="soiltesting.png" id="added1" media-type="image/png"/>
+    <item href="straightpath.png" id="added2" media-type="image/png"/>
+    <item href="nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
+  </manifest>
+  <spine>
+    <itemref idref="titlepage"/>
+    <itemref idref="html"/>
+    <itemref idref="html116"/>
+    <itemref idref="html115"/>
+    <itemref idref="html114"/>
+    <itemref idref="html113"/>
+    <itemref idref="html112"/>
+    <itemref idref="html111"/>
+    <itemref idref="html110"/>
+    <itemref idref="html19"/>
+    <itemref idref="html18"/>
+    <itemref idref="html17"/>
+    <itemref idref="html16"/>
+    <itemref idref="html15"/>
+    <itemref idref="html14"/>
+    <itemref idref="html13"/>
+    <itemref idref="html12"/>
+    <itemref idref="html11"/>
+    <itemref idref="html220"/>
+    <itemref idref="html219"/>
+    <itemref idref="html218"/>
+    <itemref idref="html217"/>
+    <itemref idref="html216"/>
+    <itemref idref="html215"/>
+    <itemref idref="html214"/>
+    <itemref idref="html213"/>
+    <itemref idref="html212"/>
+    <itemref idref="html211"/>
+    <itemref idref="html210"/>
+    <itemref idref="html29"/>
+    <itemref idref="html28"/>
+    <itemref idref="html27"/>
+    <itemref idref="html26"/>
+    <itemref idref="html25"/>
+    <itemref idref="html24"/>
+    <itemref idref="html23"/>
+    <itemref idref="html22"/>
+    <itemref idref="html21"/>
+    <itemref idref="html37"/>
+    <itemref idref="html36"/>
+    <itemref idref="html35"/>
+    <itemref idref="html34"/>
+    <itemref idref="html33"/>
+    <itemref idref="html32"/>
+    <itemref idref="html31"/>
+    <itemref idref="html43"/>
+    <itemref idref="html42"/>
+    <itemref idref="html41"/>
+    <itemref idref="html57"/>
+    <itemref idref="html56"/>
+    <itemref idref="html55"/>
+    <itemref idref="html54"/>
+    <itemref idref="html53"/>
+    <itemref idref="html52"/>
+    <itemref idref="html51"/>
+    <itemref idref="html6"/>
+    <itemref idref="html73"/>
+    <itemref idref="html72"/>
+    <itemref idref="html71"/>
+    <itemref idref="html8"/>
+  </spine>
+  </package>

@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uuid_id" prefix="calibre: https://calibre-ebook.com">
+  <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata">
+    <dc:title id="id">Farsi Straight Path</dc:title>
+    <dc:creator id="id-1">Phil Goble</dc:creator>
+    <dc:language>fa</dc:language>
+    <dc:direction>rtl</dc:direction>
+    <dc:contributor id="id-2">calibre (5.5.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:date>0101-01-01T00:00:00+00:00</dc:date>
+    <dc:identifier id="uuid_id">uuid:a21f71b0-1898-4644-831f-5dac5c8ab91c</dc:identifier>
+    <dc:identifier>calibre:a21f71b0-1898-4644-831f-5dac5c8ab91c</dc:identifier>
+    <meta refines="#id" property="title-type">main</meta>
+    <meta refines="#id" property="file-as">FarsiDec18</meta>
+    <meta name="cover" content="cover"/>
+    <meta refines="#id-1" property="role" scheme="marc:relators">aut</meta>
+    <meta refines="#id-1" property="file-as">Goble, Phil</meta>
+    <meta refines="#id-2" property="role" scheme="marc:relators">bkp</meta>
+    <meta property="calibre:timestamp" scheme="dcterms:W3CDTF">2020-08-07T09:29:47Z</meta>
+    <meta property="dcterms:modified" scheme="dcterms:W3CDTF">2020-12-18T06:56:06Z</meta>
+  </metadata>
+  <manifest>
+    <item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg calibre:title-page"/>
+    <item id="toc" href="newcreation/toc.html" media-type="application/xhtml+xml"/>
+    <item id="id813" href="newcreation/soil_split_000.html" media-type="application/xhtml+xml"/>
+    <item id="id812" href="newcreation/soil_split_001.html" media-type="application/xhtml+xml"/>
+    <item id="id811" href="newcreation/soil_split_002.html" media-type="application/xhtml+xml"/>
+    <item id="id810" href="newcreation/soil_split_003.html" media-type="application/xhtml+xml"/>
+    <item id="id89" href="newcreation/soil_split_004.html" media-type="application/xhtml+xml"/>
+    <item id="id88" href="newcreation/soil_split_005.html" media-type="application/xhtml+xml"/>
+    <item id="id87" href="newcreation/soil_split_006.html" media-type="application/xhtml+xml"/>
+    <item id="id86" href="newcreation/soil_split_007.html" media-type="application/xhtml+xml"/>
+    <item id="id85" href="newcreation/soil_split_008.html" media-type="application/xhtml+xml"/>
+    <item id="id84" href="newcreation/soil_split_009.html" media-type="application/xhtml+xml"/>
+    <item id="id83" href="newcreation/soil_split_010.html" media-type="application/xhtml+xml"/>
+    <item id="id82" href="newcreation/soil_split_011.html" media-type="application/xhtml+xml"/>
+    <item id="id81" href="newcreation/soil_split_012.html" media-type="application/xhtml+xml"/>
+    <item id="id520" href="newcreation/path_split_000.html" media-type="application/xhtml+xml"/>
+    <item id="id519" href="newcreation/path_split_001.html" media-type="application/xhtml+xml"/>
+    <item id="id518" href="newcreation/path_split_002.html" media-type="application/xhtml+xml"/>
+    <item id="id517" href="newcreation/path_split_003.html" media-type="application/xhtml+xml"/>
+    <item id="id516" href="newcreation/path_split_004.html" media-type="application/xhtml+xml"/>
+    <item id="id515" href="newcreation/path_split_005.html" media-type="application/xhtml+xml"/>
+    <item id="id514" href="newcreation/path_split_006.html" media-type="application/xhtml+xml"/>
+    <item id="id513" href="newcreation/path_split_007.html" media-type="application/xhtml+xml"/>
+    <item id="id512" href="newcreation/path_split_008.html" media-type="application/xhtml+xml"/>
+    <item id="id511" href="newcreation/path_split_009.html" media-type="application/xhtml+xml"/>
+    <item id="id510" href="newcreation/path_split_010.html" media-type="application/xhtml+xml"/>
+    <item id="id59" href="newcreation/path_split_011.html" media-type="application/xhtml+xml"/>
+    <item id="id58" href="newcreation/path_split_012.html" media-type="application/xhtml+xml"/>
+    <item id="id57" href="newcreation/path_split_013.html" media-type="application/xhtml+xml"/>
+    <item id="id56" href="newcreation/path_split_014.html" media-type="application/xhtml+xml"/>
+    <item id="id55" href="newcreation/path_split_015.html" media-type="application/xhtml+xml"/>
+    <item id="id54" href="newcreation/path_split_016.html" media-type="application/xhtml+xml"/>
+    <item id="id53" href="newcreation/path_split_017.html" media-type="application/xhtml+xml"/>
+    <item id="id52" href="newcreation/path_split_018.html" media-type="application/xhtml+xml"/>
+    <item id="id51" href="newcreation/path_split_019.html" media-type="application/xhtml+xml"/>
+    <item id="id7" href="newcreation/prayer.html" media-type="application/xhtml+xml"/>
+    <item id="id115" href="newcreation/confession_split_000.html" media-type="application/xhtml+xml"/>
+    <item id="id114" href="newcreation/confession_split_001.html" media-type="application/xhtml+xml"/>
+    <item id="id113" href="newcreation/confession_split_002.html" media-type="application/xhtml+xml"/>
+    <item id="id112" href="newcreation/confession_split_003.html" media-type="application/xhtml+xml"/>
+    <item id="id111" href="newcreation/confession_split_004.html" media-type="application/xhtml+xml"/>
+    <item id="id110" href="newcreation/confession_split_005.html" media-type="application/xhtml+xml"/>
+    <item id="id19" href="newcreation/confession_split_006.html" media-type="application/xhtml+xml"/>
+    <item id="id18" href="newcreation/confession_split_007.html" media-type="application/xhtml+xml"/>
+    <item id="id17" href="newcreation/confession_split_008.html" media-type="application/xhtml+xml"/>
+    <item id="id16" href="newcreation/confession_split_009.html" media-type="application/xhtml+xml"/>
+    <item id="id15" href="newcreation/confession_split_010.html" media-type="application/xhtml+xml"/>
+    <item id="id14" href="newcreation/confession_split_011.html" media-type="application/xhtml+xml"/>
+    <item id="id13" href="newcreation/confession_split_012.html" media-type="application/xhtml+xml"/>
+    <item id="id12" href="newcreation/confession_split_013.html" media-type="application/xhtml+xml"/>
+    <item id="id11" href="newcreation/confession_split_014.html" media-type="application/xhtml+xml"/>
+    <item id="id69" href="newcreation/pilgrimage_split_000.html" media-type="application/xhtml+xml"/>
+    <item id="id68" href="newcreation/pilgrimage_split_001.html" media-type="application/xhtml+xml"/>
+    <item id="id67" href="newcreation/pilgrimage_split_002.html" media-type="application/xhtml+xml"/>
+    <item id="id66" href="newcreation/pilgrimage_split_003.html" media-type="application/xhtml+xml"/>
+    <item id="id65" href="newcreation/pilgrimage_split_004.html" media-type="application/xhtml+xml"/>
+    <item id="id64" href="newcreation/pilgrimage_split_005.html" media-type="application/xhtml+xml"/>
+    <item id="id63" href="newcreation/pilgrimage_split_006.html" media-type="application/xhtml+xml"/>
+    <item id="id62" href="newcreation/pilgrimage_split_007.html" media-type="application/xhtml+xml"/>
+    <item id="id61" href="newcreation/pilgrimage_split_008.html" media-type="application/xhtml+xml"/>
+    <item id="id3" href="newcreation/house.html" media-type="application/xhtml+xml"/>
+    <item id="id2" href="newcreation/glossary.html" media-type="application/xhtml+xml"/>
+    <item id="page_css" href="page_styles.css" media-type="text/css"/>
+    <item id="css" href="stylesheet.css" media-type="text/css"/>
+    <item id="cover" href="cover.jpeg" media-type="image/jpeg" properties="cover-image"/>
+    <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+    <item id="toc1" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+    <item id="id1" href="newcreation/calibre_bookmarks.txt" media-type="text/plain"/>
+  </manifest>
+  <spine toc="toc1">
+    <itemref idref="titlepage"/>
+    <itemref idref="toc"/>
+    <itemref idref="id813"/>
+    <itemref idref="id812"/>
+    <itemref idref="id811"/>
+    <itemref idref="id810"/>
+    <itemref idref="id89"/>
+    <itemref idref="id88"/>
+    <itemref idref="id87"/>
+    <itemref idref="id86"/>
+    <itemref idref="id85"/>
+    <itemref idref="id84"/>
+    <itemref idref="id83"/>
+    <itemref idref="id82"/>
+    <itemref idref="id81"/>
+    <itemref idref="id520"/>
+    <itemref idref="id519"/>
+    <itemref idref="id518"/>
+    <itemref idref="id517"/>
+    <itemref idref="id516"/>
+    <itemref idref="id515"/>
+    <itemref idref="id514"/>
+    <itemref idref="id513"/>
+    <itemref idref="id512"/>
+    <itemref idref="id511"/>
+    <itemref idref="id510"/>
+    <itemref idref="id59"/>
+    <itemref idref="id58"/>
+    <itemref idref="id57"/>
+    <itemref idref="id56"/>
+    <itemref idref="id55"/>
+    <itemref idref="id54"/>
+    <itemref idref="id53"/>
+    <itemref idref="id52"/>
+    <itemref idref="id51"/>
+    <itemref idref="id7"/>
+    <itemref idref="id115"/>
+    <itemref idref="id114"/>
+    <itemref idref="id113"/>
+    <itemref idref="id112"/>
+    <itemref idref="id111"/>
+    <itemref idref="id110"/>
+    <itemref idref="id19"/>
+    <itemref idref="id18"/>
+    <itemref idref="id17"/>
+    <itemref idref="id16"/>
+    <itemref idref="id15"/>
+    <itemref idref="id14"/>
+    <itemref idref="id13"/>
+    <itemref idref="id12"/>
+    <itemref idref="id11"/>
+    <itemref idref="id69"/>
+    <itemref idref="id68"/>
+    <itemref idref="id67"/>
+    <itemref idref="id66"/>
+    <itemref idref="id65"/>
+    <itemref idref="id64"/>
+    <itemref idref="id63"/>
+    <itemref idref="id62"/>
+    <itemref idref="id61"/>
+    <itemref idref="id3"/>
+    <itemref idref="id2"/>
+  </spine>
+  </package>

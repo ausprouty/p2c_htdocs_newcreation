@@ -123,6 +123,7 @@ var BibleService = function() {
     this.findChapterById = function(scope, iso, id, number_of_files =1) {
         var deferred = $.Deferred();
         var chapter = {}
+        var bible_book = null;
         // need to cut langauge off of id to get page
         chapter.page = id.substring(4);
         chapter.dir = setDirection(iso);
@@ -135,6 +136,7 @@ var BibleService = function() {
             var elem = null;
             var clean_url = download_clean_url();
             if (scope == 'book'){
+                bible_book = id;
                 file_name = id + '.zip';
                 url =clean_url + 'bible/book/' + file_name;
                 elem = document.getElementById("download-book");
@@ -173,12 +175,14 @@ var BibleService = function() {
                                         width = count / number_of_files * 100;
                                         elem.style.width = width + "%"
                                     }
-                                    console.log (file_name + 'count is ' + count + ' of ' + number_of_files);
+                                    console.log (file_name + ' count is ' + count + ' of ' + number_of_files);
                                     // this will resolve for chapter
 									if (file_name == id){
                                         chapter.text = file_content; 
                                     }
                                     if (count == number_of_files){
+                                        updateStoredBibleFiles(bible_book);
+                                        console.log ('I am letting you know I finished with ' + bible_book );
                                         console.log ('finished');
                                         if (elem !== null){
                                             elem.innerHTML = 'Finished Downloading';

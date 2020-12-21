@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:identifier opf:scheme="calibre" id="calibre_id">338f523e-7512-458e-b88a-ac13a0157421</dc:identifier>
+    <dc:identifier opf:scheme="uuid" id="uuid_id">9f5afdf7-90e8-4422-9ead-c8bf522cb5e4</dc:identifier>
+    <dc:title>Dec18c</dc:title>
+    <dc:creator opf:file-as="Unknown" opf:role="aut">Bob Prouty</dc:creator>
+    <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (5.5.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:language>ur</dc:language>
+    <dc:direction>rtl</dc:direction>
+  </metadata>
+  <manifest>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item id="id" href="confession.html" media-type="application/xhtml+xml"/>
+    <item id="id1" href="glossary.html" media-type="application/xhtml+xml"/>
+    <item id="id2" href="house.html" media-type="application/xhtml+xml"/>
+    <item id="id3" href="path.html" media-type="application/xhtml+xml"/>
+    <item id="id4" href="pilgrimage.html" media-type="application/xhtml+xml"/>
+    <item id="id5" href="prayer.html" media-type="application/xhtml+xml"/>
+    <item id="id6" href="soil.html" media-type="application/xhtml+xml"/>
+    <item id="id7" href="page_styles.css" media-type="text/css"/>
+    <item id="id8" href="stylesheet.css" media-type="text/css"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="start"/>
+    <itemref idref="id6"/>
+    <itemref idref="id3"/>
+    <itemref idref="id5"/>
+    <itemref idref="id"/>
+    <itemref idref="id4"/>
+    <itemref idref="id2"/>
+    <itemref idref="id1"/>
+  </spine>
+  <guide/>
+</package>

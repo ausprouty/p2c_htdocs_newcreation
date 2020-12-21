@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+<head>
+<meta content="0c159d12-f5fe-4323-8194-f5c652b89f5c" name="dtb:uid"/>
+<meta content="2" name="dtb:depth"/>
+<meta content="calibre (0.8.68)" name="dtb:generator"/>
+<meta content="0" name="dtb:totalPageCount"/>
+<meta content="0" name="dtb:maxPageNumber"/>
+</head>
+<docTitle>
+<text>مسلمانوں کے لئے نئی تخلیق کی کتاب</text>
+</docTitle>
+<navMap>
+<navPoint id="id8" playOrder="0">
+<navLabel>
+<text> زمین کی جانچ</text>
+</navLabel>
+<content src="soil.html"/>
+</navPoint>
+<navPoint id="id5" playOrder="1">
+<navLabel>
+<text>نئی تخلیق کا سیدھا راستہ</text>
+</navLabel>
+<content src="path.html"/>
+</navPoint>
+
+<navPoint id="id7" playOrder="2">
+<navLabel>
+<text>	نئے تخلیق کردہ مُسلمان کی دُعائیہ زندگی</text>
+</navLabel>
+<content src="prayer.html"/>
+</navPoint>
+<navPoint id="id1" playOrder="3">
+<navLabel>
+<text>نیا تخلیقی اعتراف</text>
+</navLabel>
+<content src="confession.html"/>
+</navPoint>
+<navPoint id="id6" playOrder="4">
+<navLabel>
+<text>نئی تخلیق کی زیارت</text>
+</navLabel>
+<content src="pilgrimage.html"/>
+</navPoint>
+<navPoint id="id3" playOrder="5">
+<navLabel>
+<text>نئے خلق شُدہ مسلمانوں کے لئے گھر میں</text>
+</navLabel>
+<content src="house.html"/>
+</navPoint>
+<navPoint id="id2" playOrder="6">
+<navLabel>
+<text>فرہنگ</text>
+</navLabel>
+<content src="glossary.html"/>
+</navPoint>
+
+
+</navMap></ncx>

@@ -88,6 +88,8 @@
         });
     }
 
+    //todo: check to see if item downloaded (Bible or Book)
+
     // Close the dropdown menu if the user clicks outside of it
     window.onclick = function(event) {
         if (!event.target.matches('.dropbtn')) {

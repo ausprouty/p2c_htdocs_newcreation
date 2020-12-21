@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="3.0" prefix="calibre: https://calibre-ebook.com" dir="rtl">
+  <metadata xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dc:title id="id">Arabic The Path</dc:title>
+    <dc:creator id="id-1">Phil Goble</dc:creator>
+    <dc:contributor id="id-2">calibre (4.22.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:language>ar</dc:language>
+    <dc:identifier id="uuid_id">uuid:89c73ea9-ddef-4006-ab9e-796d2862d653</dc:identifier>
+    <dc:identifier>calibre:89c73ea9-ddef-4006-ab9e-796d2862d653</dc:identifier>
+    <dc:date>0101-01-01T00:00:00+00:00</dc:date>
+    <meta refines="#id" property="title-type">main</meta>
+    <meta refines="#id" property="file-as">Arabic - Aug 7</meta>
+    <meta name="cover" content="cover"/>
+    <meta refines="#id-1" property="role" scheme="marc:relators">aut</meta>
+    <meta refines="#id-1" property="file-as">Goble, Phil</meta>
+    <meta refines="#id-2" property="role" scheme="marc:relators">bkp</meta>
+    <meta property="calibre:timestamp" scheme="dcterms:W3CDTF">2020-08-07T09:28:06Z</meta>
+    <meta property="dcterms:modified" scheme="dcterms:W3CDTF">2020-12-19T04:07:08Z</meta>
+  </metadata>
+  <manifest>
+    <item href="titlepage.xhtml" id="titlepage" media-type="application/xhtml+xml" properties="svg calibre:title-page"/>
+    <item href="toc.html" id="toc" media-type="application/xhtml+xml"/>
+    <item href="soil_split_000.html" id="id811" media-type="application/xhtml+xml"/>
+    <item href="soil_split_001.html" id="id810" media-type="application/xhtml+xml"/>
+    <item href="soil_split_002.html" id="id89" media-type="application/xhtml+xml"/>
+    <item href="soil_split_003.html" id="id88" media-type="application/xhtml+xml"/>
+    <item href="soil_split_004.html" id="id87" media-type="application/xhtml+xml"/>
+    <item href="soil_split_005.html" id="id86" media-type="application/xhtml+xml"/>
+    <item href="soil_split_006.html" id="id85" media-type="application/xhtml+xml"/>
+    <item href="soil_split_007.html" id="id84" media-type="application/xhtml+xml"/>
+    <item href="soil_split_008.html" id="id83" media-type="application/xhtml+xml"/>
+    <item href="soil_split_009.html" id="id82" media-type="application/xhtml+xml"/>
+    <item href="soil_split_010.html" id="id81" media-type="application/xhtml+xml"/>
+    <item href="path_split_000.html" id="id517" media-type="application/xhtml+xml"/>
+    <item href="path_split_001.html" id="id516" media-type="application/xhtml+xml"/>
+    <item href="path_split_002.html" id="id515" media-type="application/xhtml+xml"/>
+    <item href="path_split_003.html" id="id514" media-type="application/xhtml+xml"/>
+    <item href="path_split_004.html" id="id513" media-type="application/xhtml+xml"/>
+    <item href="path_split_005.html" id="id512" media-type="application/xhtml+xml"/>
+    <item href="path_split_006.html" id="id511" media-type="application/xhtml+xml"/>
+    <item href="path_split_007.html" id="id510" media-type="application/xhtml+xml"/>
+    <item href="path_split_008.html" id="id59" media-type="application/xhtml+xml"/>
+    <item href="path_split_009.html" id="id58" media-type="application/xhtml+xml"/>
+    <item href="path_split_010.html" id="id57" media-type="application/xhtml+xml"/>
+    <item href="path_split_011.html" id="id56" media-type="application/xhtml+xml"/>
+    <item href="path_split_012.html" id="id55" media-type="application/xhtml+xml"/>
+    <item href="path_split_013.html" id="id54" media-type="application/xhtml+xml"/>
+    <item href="path_split_014.html" id="id53" media-type="application/xhtml+xml"/>
+    <item href="path_split_015.html" id="id52" media-type="application/xhtml+xml"/>
+    <item href="path_split_016.html" id="id51" media-type="application/xhtml+xml"/>
+    <item href="prayer_split_000.html" id="id76" media-type="application/xhtml+xml"/>
+    <item href="prayer_split_001.html" id="id75" media-type="application/xhtml+xml"/>
+    <item href="prayer_split_002.html" id="id74" media-type="application/xhtml+xml"/>
+    <item href="prayer_split_003.html" id="id73" media-type="application/xhtml+xml"/>
+    <item href="prayer_split_004.html" id="id72" media-type="application/xhtml+xml"/>
+    <item href="prayer_split_005.html" id="id71" media-type="application/xhtml+xml"/>
+    <item href="confession_split_000.html" id="id115" media-type="application/xhtml+xml"/>
+    <item href="confession_split_001.html" id="id114" media-type="application/xhtml+xml"/>
+    <item href="confession_split_002.html" id="id113" media-type="application/xhtml+xml"/>
+    <item href="confession_split_003.html" id="id112" media-type="application/xhtml+xml"/>
+    <item href="confession_split_004.html" id="id111" media-type="application/xhtml+xml"/>
+    <item href="confession_split_005.html" id="id110" media-type="application/xhtml+xml"/>
+    <item href="confession_split_006.html" id="id19" media-type="application/xhtml+xml"/>
+    <item href="confession_split_007.html" id="id18" media-type="application/xhtml+xml"/>
+    <item href="confession_split_008.html" id="id17" media-type="application/xhtml+xml"/>
+    <item href="confession_split_009.html" id="id16" media-type="application/xhtml+xml"/>
+    <item href="confession_split_010.html" id="id15" media-type="application/xhtml+xml"/>
+    <item href="confession_split_011.html" id="id14" media-type="application/xhtml+xml"/>
+    <item href="confession_split_012.html" id="id13" media-type="application/xhtml+xml"/>
+    <item href="confession_split_013.html" id="id12" media-type="application/xhtml+xml"/>
+    <item href="confession_split_014.html" id="id11" media-type="application/xhtml+xml"/>
+    <item href="pilgrimage.html" id="id6" media-type="application/xhtml+xml"/>
+    <item href="house.html" id="id3" media-type="application/xhtml+xml"/>
+    <item href="styles/page_styles.css" id="page_css" media-type="text/css"/>
+    <item href="styles/stylesheet.css" id="css" media-type="text/css"/>
+    <item href="images/cover.jpeg" id="cover" media-type="image/jpeg" properties="cover-image"/>
+    <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+    <item id="toc1" href="Miscallaneous/toc.ncx" media-type="application/x-dtbncx+xml"/>
+  </manifest>
+  <spine toc="toc1" page-progression-direction="rtl">
+    <itemref idref="titlepage"/>
+    <itemref idref="toc"/>
+    <itemref idref="id811"/>
+    <itemref idref="id810"/>
+    <itemref idref="id89"/>
+    <itemref idref="id88"/>
+    <itemref idref="id87"/>
+    <itemref idref="id86"/>
+    <itemref idref="id85"/>
+    <itemref idref="id84"/>
+    <itemref idref="id83"/>
+    <itemref idref="id82"/>
+    <itemref idref="id81"/>
+    <itemref idref="id517"/>
+    <itemref idref="id516"/>
+    <itemref idref="id515"/>
+    <itemref idref="id514"/>
+    <itemref idref="id513"/>
+    <itemref idref="id512"/>
+    <itemref idref="id511"/>
+    <itemref idref="id510"/>
+    <itemref idref="id59"/>
+    <itemref idref="id58"/>
+    <itemref idref="id57"/>
+    <itemref idref="id56"/>
+    <itemref idref="id55"/>
+    <itemref idref="id54"/>
+    <itemref idref="id53"/>
+    <itemref idref="id52"/>
+    <itemref idref="id51"/>
+    <itemref idref="id76"/>
+    <itemref idref="id75"/>
+    <itemref idref="id74"/>
+    <itemref idref="id73"/>
+    <itemref idref="id72"/>
+    <itemref idref="id71"/>
+    <itemref idref="id115"/>
+    <itemref idref="id114"/>
+    <itemref idref="id113"/>
+    <itemref idref="id112"/>
+    <itemref idref="id111"/>
+    <itemref idref="id110"/>
+    <itemref idref="id19"/>
+    <itemref idref="id18"/>
+    <itemref idref="id17"/>
+    <itemref idref="id16"/>
+    <itemref idref="id15"/>
+    <itemref idref="id14"/>
+    <itemref idref="id13"/>
+    <itemref idref="id12"/>
+    <itemref idref="id11"/>
+    <itemref idref="id6"/>
+    <itemref idref="id3"/>
+  </spine>
+  </package>

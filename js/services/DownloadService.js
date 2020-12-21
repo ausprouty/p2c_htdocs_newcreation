@@ -52,6 +52,36 @@ function  updateDownloadQue(book){
     }
     setTimeout(downloadNextItem, 100);
 }
+function bookIsDownloaded(file){
+    var stored = [];
+    if (window.localStorage.getItem("storedFiles")){
+        stored = JSON.parse(window.localStorage.getItem("storedFiles"));
+    }
+    var l = stored.length;
+    for (var i = 0; i < l; i++) {
+        if (stored[i] == file) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function  updateStoredBibleFiles(file){
+    var stored = [];
+    if (window.localStorage.getItem("storedFiles")){
+        stored = JSON.parse(window.localStorage.getItem("storedFiles"));
+    }
+    // remove if already there
+    var l = stored.length;
+    for (var i = 0; i < l; i++) {
+        if (stored[i] == file) {
+            stored.splice(i, 1);
+        }
+    }
+    stored.push(file);
+    window.localStorage.setItem("storedFiles", JSON.stringify(stored));
+    return;
+}
 
 async function downloadAndStoreBibleBook(book){
     result = {};
@@ -83,6 +113,7 @@ async function downloadAndStoreBibleBook(book){
                                 result.text = 'success';
                                 console.log ('finished storing ' +  file_name);
                                 updateDownloadQue(book);
+                                updateStoredBibleFiles(book);
                                 return(result);
                             }
                             count++;

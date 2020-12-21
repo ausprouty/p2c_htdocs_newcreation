@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uuid_id" prefix="calibre: https://calibre-ebook.com">
+  <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata">
+    <dc:title id="id">UrduDec20</dc:title>
+    <dc:creator id="id-1">Phil Goble</dc:creator>
+    <dc:language>URT</dc:language>
+    <dc:direction>rtl</dc:direction>
+    <dc:contributor id="id-2">calibre (5.5.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:identifier id="uuid_id">uuid:f7aa302d-0cc4-4e9e-991d-0116402c4f17</dc:identifier>
+    <dc:identifier>calibre:f7aa302d-0cc4-4e9e-991d-0116402c4f17</dc:identifier>
+    <dc:date>0101-01-01T00:00:00+00:00</dc:date>
+    <meta refines="#id" property="title-type">main</meta>
+    <meta refines="#id" property="file-as">Urdu18Dec</meta>
+    <meta name="cover" content="cover"/>
+    <meta refines="#id-1" property="role" scheme="marc:relators">aut</meta>
+    <meta refines="#id-1" property="file-as">Goble, Phil</meta>
+    <meta refines="#id-2" property="role" scheme="marc:relators">bkp</meta>
+    <meta property="calibre:timestamp" scheme="dcterms:W3CDTF">2020-12-13T03:33:41Z</meta>
+    <meta property="dcterms:modified" scheme="dcterms:W3CDTF">2020-12-18T01:47:19Z</meta>
+  </metadata>
+  <manifest>
+    <item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg calibre:title-page"/>
+    <item id="id1" href="confession.html" media-type="application/xhtml+xml"/>
+    <item id="id2" href="glossary.html" media-type="application/xhtml+xml"/>
+    <item id="id3" href="house.html" media-type="application/xhtml+xml"/>
+    <item id="id4" href="path.html" media-type="application/xhtml+xml"/>
+    <item id="id5" href="pilgrimage.html" media-type="application/xhtml+xml"/>
+    <item id="id6" href="prayer.html" media-type="application/xhtml+xml"/>
+    <item id="id7" href="soil.html" media-type="application/xhtml+xml"/>
+    <item id="id8" href="toc.html" media-type="application/xhtml+xml"/>
+    <item id="page_css" href="page_styles.css" media-type="text/css"/>
+    <item id="css" href="stylesheet.css" media-type="text/css"/>
+    <item id="cover" href="cover.jpeg" media-type="image/jpeg" properties="cover-image"/>
+    <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+    <item id="id9" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+  </manifest>
+  <spine toc="id9">
+    <itemref idref="titlepage"/>
+    <itemref idref="id1"/>
+    <itemref idref="id2"/>
+    <itemref idref="id3"/>
+    <itemref idref="id4"/>
+    <itemref idref="id5"/>
+    <itemref idref="id6"/>
+    <itemref idref="id7"/>
+    <itemref idref="id8"/>
+  </spine>
+  </package>

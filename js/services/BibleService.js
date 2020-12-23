@@ -22,20 +22,39 @@ var BibleService = function() {
     this.findBookById = function(iso, id) {
         var deferred = $.Deferred(),
             bibles = JSON.parse(window.localStorage.getItem("bible"));
-            select_chapter = JSON.parse(window.localStorage.getItem("selectChapter"));
+            select_chapter = getTerm(iso, 'select_chapter');
         (book = null), (chapters = null);
         l = bibles.length;
         for (var i = 0; i < l; i++) {
             if (bibles[i].bid === id) {
                 book = bibles[i];
                 book ['book_name_selected'] = bibles[i]['book_name_' + iso];
-                book['select_chapter'] = select_chapter[iso]; // 'Select Chapter'
+                book['select_chapter'] = select_chapter;
                 book['iso']= iso;
                 break;
             }
         }
         deferred.resolve(book);
         return deferred.promise();
+    };
+    this.chapterDivs = function(book) {
+        var result = {};
+        result.iso = book.iso;
+        result.bid = book.bid;
+        result.chapters = book.number_of_chapters;
+        result.book_name = book.book_name_selected;
+        result.file_name = book.iso + '--book' + book.bid;
+        result.dir = setDirection(book.iso);
+        var chap = book.number_of_chapters;
+        var link_start = '<a class = "bible_link" href = "#' + book.iso +'/chapter/' +  book.iso + '--book' + book.bid ;
+        var links = []
+        for (var i = 1; i <= chap; i++) {
+            link =  link_start + '--chapter' + i + '.txt">';
+            links.push(link + i + '</a>');
+        }
+        result.links = links;
+        console.log (result);
+        return result;
     };
     this.chapterTable = function(book) {
         var result = {};
@@ -77,7 +96,7 @@ var BibleService = function() {
             row = table + "</tr><tr>";
             table = row;
         }
-        row = table.substring(0, table.length - 5) + "</table>";
+        row = table.substring(0, table.length - 4) + "</table>";
         table = row + "</div>";
         result.table = table;
         return result;
@@ -113,9 +132,7 @@ var BibleService = function() {
         result.books = books;
         result.dir = setDirection(iso);
         result.iso = iso
-        // find title
-        var title = JSON.parse(window.localStorage.getItem("selectBook"));
-        result.title = title[iso];
+        result.title =getTerm(iso, 'select_book');
     
         deferred.resolve(result);
         return deferred.promise();
@@ -132,6 +149,9 @@ var BibleService = function() {
         console.log ('I am looking for ' + id);
         if (!GetBibleChapterFromStorage(id)) {
             console.log ('I did not find  ' + id + ' in local storage');
+            var downloading = getTerm(iso,'downloading');
+            var downloading_chapter = getTerm(iso,'downloading_chapter');
+            var finished_download = getTerm(iso, 'finished_download');
             // setup progress meter from https://www.w3schools.com/howto/howto_js_progressbar.asp
             var elem = null;
             var clean_url = download_clean_url();
@@ -147,7 +167,7 @@ var BibleService = function() {
                 url = clean_url + 'bible/chapter/' + file_name;
             }
             if (elem !== null){
-                elem.innerHTML = 'Downloading';
+                elem.innerHTML = downloading;
                 var width = 1;
             }
             console.log('url is ' + url);
@@ -175,18 +195,22 @@ var BibleService = function() {
                                         width = count / number_of_files * 100;
                                         elem.style.width = width + "%"
                                     }
-                                    console.log (file_name + ' count is ' + count + ' of ' + number_of_files);
+                                    if (elem !== null){
+                                        elem.innerHTML = downloading_chapter + ' ' + count;
+                                    }
                                     // this will resolve for chapter
 									if (file_name == id){
                                         chapter.text = file_content; 
                                     }
                                     if (count == number_of_files){
-                                        updateStoredBibleFiles(bible_book);
+                                        updateReferenceToStoredBibleFiles(bible_book);
                                         console.log ('I am letting you know I finished with ' + bible_book );
-                                        console.log ('finished');
                                         if (elem !== null){
-                                            elem.innerHTML = 'Finished Downloading';
+                                            elem.innerHTML = finished_download;
                                         }
+                                        var downloaded = document.getElementById("book-downloaded");
+                                        downloaded.classList.remove("hide");
+                                        downloaded.classList.add("show");
                                         deferred.resolve(chapter);
                                     }
                                     count++;
@@ -271,6 +295,14 @@ function BibleNoteHide(note){
 	document.getElementById('see_' + note).className = "note_toggle";
 	
 }
+function getBibleData(){
+    if (localStorage.bible) {
+        return JSON.parse(localStorage.bible);
+    } else {
+        var Bible = new BibleService;
+        return JSON.parse(localStorage.bible);
+    }
+}
 
 
 function SortByName(a, b) {
@@ -293,27 +325,90 @@ function GetNotes(id) {
     return notes[id];
 }
 
+function getTerm(iso, key){
+    if (!window.localStorage.translation){
+        initializeBibleLocalStorage();
+    }
+    var terms = JSON.parse(window.localStorage.getItem("translation", null));
+    for (var i = 0; i< terms.length; i++){
+        if (terms[i]['iso'] == iso){
+            console.log(terms[i]);
+            return terms[i][key];
+        }
+    }
+}
 function initializeBibleLocalStorage(){
     window.localStorage.setItem(
-        "selectBook",
-        JSON.stringify(
-        {"ar" : "حدد الكتاب",
-            "en": "Select Book",
-            "fa": "کتاب را انتخاب کنید",
-            "ur": "کتاب منتخب کریں"
-        }
-        )
-    );
-    window.localStorage.setItem(
-        "selectChapter",
-        JSON.stringify(
-        {
-            "ar" : "حدد الفصل",
-            "en": "Select Chapter",
-            "fa": "فصل را انتخاب کنید",
-            "ur": "باب منتخب کریں"
-        }
-        )
+        "translation",
+        JSON.stringify(  [
+        {   "iso": "ar",
+            "available_offline": "متاح للاستخدام دون اتصال",
+            "bible": "الكتاب المقدس",
+            "bible_downloaded": "تحميل الكتاب المقدس",
+            "bible_ready": "الكتاب المقدس جاهز للاستخدام في وضع عدم الاتصال",
+            "book_ready": "% جاهز للاستخدام في وضع عدم الاتصال",
+            "download_bible": "تحميل الكتاب المقدس للاستخدام دون اتصال",
+            "download_book": "تحميل % للاستخدام دون اتصال.",
+            "downloading": "جارى التحميل",
+            "downloading_chapter": "تحميل الفصل ",
+            "link_to_app": "هذا هو الرابط لتطبيق New Creations:",
+            "finished_download": "انتهى التنزيل",
+            "remove_item": "إزالة%  من التخزين المحلي",
+            "resume": "استئنف % ",
+            "select_book": "حدد الكتاب",
+            "select_chapter": "حدد الفصل"
+        },
+        {   "iso": "en",
+            "available_offline": "Available for offline use",
+            "bible": "Bible",
+            "bible_downloaded": "Bible downloaded",
+            "bible_ready": "Bible ready for offline use",
+            "book_ready": "% ready for offline use",
+            "download_bible": "Download Bible for offline use",
+            "download_book": "Download % for offline use.",
+            "downloading": "Downloading",
+            "downloading_chapter": "Downloading Chapter ",
+            "link_to_app": "Here is the link to the New Creations App:",
+            "finished_download": "Finished downloading",
+            "remove_item": "Remove % from local storage",
+            "resume": "Resume %",
+            "select_book": "Select Book",
+            "select_chapter": "Select Chapter"
+        },
+        {   "iso": "fa",
+            "available_offline": "برای استفاده آفلاین موجود است",
+            "bible": "کتاب مقدس",
+            "bible_downloaded": "کتاب مقدس بارگیری شد",
+            "bible_ready": "کتاب مقدس آماده استفاده آفلاین است",
+            "book_ready": "% برای استفاده آفلاین آماده است",
+            "download_bible": "کتاب مقدس را برای استفاده آفلاین بارگیری کنید",
+            "download_book": "% را برای استفاده آفلاین بارگیری کنید.",
+            "downloading": "در حال بارگیری",
+            "downloading_chapter": "باب ڈاؤن لوڈ کرنا ",
+            "link_to_app": "در اینجا پیوند به برنامه New Creations وجود دارد:",
+            "finished_download": "بارگیری به پایان رسید",
+            "remove_item": "% را از حافظه محلی حذف کنید",
+            "resume": "از سرگیری %",
+            "select_book": "کتاب را انتخاب کنید",
+            "select_chapter": "فصل را انتخاب کنید"
+        },
+        {   "iso": "ur",
+            "available_offline": "آف لائن استعمال کے لئے دستیاب ہے",
+            "bible": "بائبل",
+            "bible_downloaded": "بائبل ڈاؤن لوڈ کی گئی",
+            "bible_ready": "بائبل آف لائن استعمال کے لئے تیار ہے",
+            "book_ready": "% آف لائن استعمال کے لئے تیار ہے",
+            "download_bible": "آف لائن استعمال کے لئے بائبل ڈاؤن لوڈ کریں",
+            "download_book": "آف لائن استعمال کے لئے% ڈاؤن لوڈ کریں۔",
+            "downloading": "ڈاؤن لوڈ ہو رہا ہے",
+            "downloading_chapter": "باب ڈاؤن لوڈ کرنا ",
+            "link_to_app": "نئی تخلیقات ایپ کا لنک یہ ہے:",
+            "finished_download": "ڈاؤن لوڈ مکمل ہوگیا",
+            "remove_item": "مقامی اسٹوریج سے% ہٹا دیں",
+            "resume": "دوبارہ شروع کریں%",
+            "select_book": "کتاب منتخب کریں",
+            "select_chapter": "باب منتخب کریں"
+        }])
     );
     window.localStorage.setItem(
         "bible",

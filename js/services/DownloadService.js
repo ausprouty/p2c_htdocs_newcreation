@@ -4,14 +4,14 @@ const STANDARD_DOWNLOAD_URL = 'http://localhost/laravel_newcreation/bible/book/'
 
 function downloadBook(iso, book, number_of_chapters){
     var service = new BibleService;
-    service.findChapterById('book',iso,book, number_of_chapters).done(function() {
+    service.findChapterById('book',iso, book, number_of_chapters).done(function() {
     });
 
 }
 function downloadBible(iso){
     elem = document.getElementById("download-bible");
     elem.innerHTML = 'Downloading';
-   downloadBiblebyBook(iso);
+    downloadBiblebyBook(iso);
     return;
 }
 function downloadBiblebyBook (iso){
@@ -66,12 +66,92 @@ function bookIsDownloaded(file){
     return false;
 }
 
-function  updateStoredBibleFiles(file){
+function bibleIsDownloaded(iso){
+    console.log (iso);
     var stored = [];
     if (window.localStorage.getItem("storedFiles")){
         stored = JSON.parse(window.localStorage.getItem("storedFiles"));
     }
-    // remove if already there
+    var l = stored.length;
+    if (l < 66){
+        return false;
+    }
+    var pattern = iso + '--book';
+    var count = 0;
+    for (var i = 0; i < l; i++) {
+        if (stored[i].includes(pattern) ) {
+           count++;
+        }
+    }
+    if (count < 66){
+        return false;
+    }
+    return true;
+   
+}
+function removeStoredBible(iso){
+    var bid = null;
+    var book = null;
+    var file = null;
+    var chapter = 0;
+    var number_of_chapters = 0;
+    var books = getBibleData();
+    for (var i = 0; i<= books.length; i++){
+        if (books[i].number_of_chapters){
+            bid = books[i].bid;
+            number_of_chapters = books[i].number_of_chapters;
+            removeReferenceToStoredBibleFile(iso + '--book' + bid +'.zip');
+            book = iso + '--book' + bid + '--chapter';
+            for (chapter = 1; chapter <= number_of_chapters; chapter++){
+                file = book + chapter + '.txt';
+                localStorage.removeItem(file);
+            }
+        }
+    }
+}
+// en--book//
+function removeStoredBook(book){
+    var n = book.indexOf("--book");
+    var bid = book.slice(n + 6);
+    var file = null;
+    var books = getBibleData();
+    for (var i = 0; i < books.length; i++){
+        if (typeof books[i].bid !== 'undefined'){
+            if (bid == books[i].bid){
+                var number_of_chapters = books[i].number_of_chapters;
+                removeReferenceToStoredBibleFile(book);
+                for (var chapter = 1; chapter <= number_of_chapters; chapter++){
+                    file = book + '--chapter' + chapter + '.txt';
+                    console.log(file);
+                    localStorage.removeItem(file);
+                }
+            }
+        }
+    }
+    location.reload(); 
+}
+
+
+function removeReferenceToStoredBibleFile(file){
+    var stored = [];
+    if (window.localStorage.getItem("storedFiles")){
+        stored = JSON.parse(window.localStorage.getItem("storedFiles"));
+    }
+    var l = stored.length;
+    for (var i = 0; i < l; i++) {
+        if (stored[i] == file) {
+            stored.splice(i, 1);
+        }
+    }
+    window.localStorage.setItem("storedFiles", JSON.stringify(stored));
+    return;
+}
+
+function  updateReferenceToStoredBibleFiles(file){
+    var stored = [];
+    if (window.localStorage.getItem("storedFiles")){
+        stored = JSON.parse(window.localStorage.getItem("storedFiles"));
+    }
     var l = stored.length;
     for (var i = 0; i < l; i++) {
         if (stored[i] == file) {
@@ -113,7 +193,7 @@ async function downloadAndStoreBibleBook(book){
                                 result.text = 'success';
                                 console.log ('finished storing ' +  file_name);
                                 updateDownloadQue(book);
-                                updateStoredBibleFiles(book);
+                                updateReferenceToStoredBibleFiles(book);
                                 return(result);
                             }
                             count++;

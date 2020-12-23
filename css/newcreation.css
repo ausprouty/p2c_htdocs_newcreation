@@ -203,8 +203,11 @@ body{
 .content{
 	top:60px;
 	bottom:0px;
+	padding-bottom: 100px;
+	margin-bottom: 100px;
 	left:10px;
 	right:10px;
+	height:100%;
 
 }
 
@@ -473,4 +476,28 @@ div.note_hide{
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;} 
-  .hide{display:none;}
+  .hide {display:none;}
+  div.chapter{
+	display: inline-block;
+	width: 19%;
+	padding: 20px;
+	margin: 1px;
+	margin-right:0px;
+	background-color: #09716a;
+	text-align: center;
+  }
+  div.chapters{
+	display: block;
+	background-color: white;
+  }
+  div.downloaded{
+	  margin-top:20px;
+	  text-align:center;
+	  color: #09716a;
+	  height: 100px;
+
+  }
+  div.footer{
+	  display:block;
+	  height:100px;
+  }

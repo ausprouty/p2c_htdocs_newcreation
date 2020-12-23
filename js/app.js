@@ -13,7 +13,7 @@
     );
     HomeView.prototype.template = Handlebars.compile($("#home-tpl").html());
     PageView.prototype.template = Handlebars.compile($("#page-tpl").html());
-    EbookView.prototype.template = Handlebars.compile($("#ebook-tpl").html());
+
     var slider = new PageSlider($("body"));
     var service = new BibleService();
     var page = new PageService();

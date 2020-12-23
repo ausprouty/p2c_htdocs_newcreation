@@ -208,9 +208,11 @@ var BibleService = function() {
                                         if (elem !== null){
                                             elem.innerHTML = finished_download;
                                         }
-                                        var downloaded = document.getElementById("book-downloaded");
-                                        downloaded.classList.remove("hide");
-                                        downloaded.classList.add("show");
+                                        if (document.getElementById("book-downloaded")){
+                                            var downloaded = document.getElementById("book-downloaded");
+                                            downloaded.classList.remove("hide");
+                                            downloaded.classList.add("show");
+                                        }
                                         deferred.resolve(chapter);
                                     }
                                     count++;
@@ -332,7 +334,6 @@ function getTerm(iso, key){
     var terms = JSON.parse(window.localStorage.getItem("translation", null));
     for (var i = 0; i< terms.length; i++){
         if (terms[i]['iso'] == iso){
-            console.log(terms[i]);
             return terms[i][key];
         }
     }

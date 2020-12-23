@@ -1,5 +1,5 @@
-function share() {
-    var text = "Here is the link to  the New Creations App: ";
+function share(iso) {
+    var text = getTerm(iso, 'link_to_app') + '  ';
     var subject = "New Creations";
     if ("share" in navigator) {
       navigator.share({
@@ -30,4 +30,3 @@ function share() {
     }
     return url;
   }
-  

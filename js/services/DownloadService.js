@@ -1,5 +1,5 @@
 
-const STANDARD_DOWNLOAD_URL = 'http://localhost/laravel_newcreation/bible/book/';
+const STANDARD_DOWNLOAD_URL = 'https://newcreation.app/bible/book/';
 
 
 function downloadBook(iso, book, number_of_chapters){

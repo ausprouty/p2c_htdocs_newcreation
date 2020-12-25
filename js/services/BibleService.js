@@ -9,15 +9,16 @@ var BibleService = function() {
         return deferred.promise();
     };
     this.setup = function() {
-        var currentVersion = "2.01";
-        if (!window.localStorage.getItem("newcreationVersion")) {
-            window.localStorage.clear();
-            window.localStorage.setItem("newcreationVersion", currentVersion);
-        }
-        if (window.localStorage.getItem("newcreationVersion") !== currentVersion){
-            window.localStorage.clear();
-            window.localStorage.setItem("newcreationVersion", currentVersion);
-        }
+        console.log ('setup');
+        //var currentVersion = LATEST_VERSION;
+        // if (!window.localStorage.getItem("newcreationVersion")) {
+        //     window.localStorage.clear();
+        //     window.localStorage.setItem("newcreationVersion", currentVersion);
+        // }
+        // if (window.localStorage.getItem("newcreationVersion") !== currentVersion){
+        //     window.localStorage.clear();
+        //     window.localStorage.setItem("newcreationVersion", currentVersion);
+        // }
     };
     this.findBookById = function(iso, id) {
         var deferred = $.Deferred(),
@@ -337,6 +338,15 @@ function getTerm(iso, key){
             return terms[i][key];
         }
     }
+    // if language is wrong; try english
+    if (iso != 'en'){
+        for (var i = 0; i< terms.length; i++){
+            if (terms[i]['iso'] == 'en'){
+                return terms[i][key];
+            }
+        }
+    }
+    return null;
 }
 function initializeBibleLocalStorage(){
     window.localStorage.setItem(

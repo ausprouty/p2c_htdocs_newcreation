@@ -457,8 +457,8 @@ div.note_hide{
   .dropdown-content {
 	display: none;
 	position: absolute;
+	
 	background-color: #f1f1f1;
-	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
   }
@@ -500,4 +500,21 @@ div.note_hide{
   div.footer{
 	  display:block;
 	  height:100px;
+  }
+  @media (max-width:600px){
+	.dropdown-content {
+		right: 0;
+	}
+  }
+  @media (max-width: 400px) {
+	/* CSS that should be displayed if width is equal to or less stated amount goes here */
+	.bar{
+		height: 45px;
+	}
+  @media (max-width: 300px) {
+	/* CSS that should be displayed if width is equal to or less stated amount goes here */
+	.bar{
+		height: 30px;
+	}
+	
   }

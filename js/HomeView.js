@@ -3,6 +3,7 @@ var HomeView = function(page) {
     this.$el = $("<div/>");
   };
   this.render = function() {
+  
     var content = this.template(page);
     if (isIOS()) {
       if (needsToSeeIOSPrompt()) {

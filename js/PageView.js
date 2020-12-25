@@ -5,6 +5,7 @@ var PageView = function(page, iso) {
 	};
 
 	this.render = function() {
+		page.iso = iso;
 		var content = this.template(page);
 		this.$el.html(content);
 		return this;

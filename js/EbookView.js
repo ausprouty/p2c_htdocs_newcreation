@@ -1,4 +1,4 @@
-function findLastPage(iso){
+function findLastPage(iso= 'en'){
     var stored = localStorage.getItem('currentSectionIndex', undefined);
     if (stored){
         console.log ('stored');
@@ -12,7 +12,7 @@ function findLastPage(iso){
     }
     return null;
 }
-function storeLastPage(iso, page){
+function storeLastPage(iso='en', page){
     console.log (page);
     var stored = [];
     var index = [];

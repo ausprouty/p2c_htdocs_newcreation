@@ -1,4 +1,4 @@
-function share(iso) {
+function share(iso= 'en') {
     var text = getTerm(iso, 'link_to_app');
     var subject = "New Creations";
     if ("share" in navigator) {

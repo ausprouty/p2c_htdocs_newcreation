@@ -5,7 +5,7 @@ importScripts("js/sw-offline-google-analytics.js");
 goog.offlineGoogleAnalytics.initialize();
 var CACHE_DYNAMIC_NAME = "content-5";
 //Change this value every time before you build
-const LATEST_VERSION = "2.12";
+const LATEST_VERSION = "2.18";
 
 //clean up old cache
 self.addEventListener("activate", event => {
@@ -28,20 +28,10 @@ importScripts(
   "https://storage.googleapis.com/workbox-cdn/releases/3.5.0/workbox-sw.js"
 );
 workbox.precaching.precacheAndRoute([
-  "/index.html?v=" + LATEST_VERSION,
   "/css/basic.css?v=" + LATEST_VERSION,
   "/css/newcreation.css?v=" + LATEST_VERSION,
   "/css/styles.css?v=" + LATEST_VERSION,
-  "/js/app.js?v=" + LATEST_VERSION,
-  "/js/BookListView.js?v=" + LATEST_VERSION,
-  "/js/ChapterView.js?v=" + LATEST_VERSION,
-  "/js/HomeView.js?v=" + LATEST_VERSION,
-  "/js/Language.js?v=" + LATEST_VERSION,
-  "/js/PageView.js?v=" + LATEST_VERSION,
-  "/js/Share.js?v=" + LATEST_VERSION,
-  "/js/services/BibleService.js?v=" + LATEST_VERSION,
-  "/js/services/DownloadService.js?v=" + LATEST_VERSION,
-  "/js/services/PageService.js?v=" + LATEST_VERSION,
+ 
   "/lib/jszip.min.js?v=" + LATEST_VERSION,
   "/lib/lz-string.min.js?v=" + LATEST_VERSION
 ]);

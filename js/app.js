@@ -62,6 +62,9 @@
             });
         });
         router.addRoute(":iso/book/:id", function(iso,id) {
+            if (!window.localStorage.bible){
+                initializeBibleLocalStorage();
+            }
             service.findBookById(iso, parseInt(id)).done(function(book) {
                 var chart = service.chapterTable(book);
                 var chaptersList = new ChapterListView(chart).render().$el;
@@ -137,7 +140,7 @@
     });
 
     /* --------------------------------- Event Registration -------------------------------- */
-    const LATEST_VERSION = "2.13";
+    const LATEST_VERSION = "2.18";
     
     $(window).on("hashchange", $.proxy(this.route, this));
     

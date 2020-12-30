@@ -2,7 +2,7 @@ const STANDARD_DELAY = 1000;
 
 
 var BibleService = function() {
-    this.initialize = function() {
+    this.initialize =  function() {
         var deferred = $.Deferred();
         initializeBibleLocalStorage();
         deferred.resolve();
@@ -10,20 +10,19 @@ var BibleService = function() {
     };
     this.setup = function() {
         console.log ('setup');
-        //var currentVersion = LATEST_VERSION;
-        // if (!window.localStorage.getItem("newcreationVersion")) {
-        //     window.localStorage.clear();
-        //     window.localStorage.setItem("newcreationVersion", currentVersion);
-        // }
-        // if (window.localStorage.getItem("newcreationVersion") !== currentVersion){
-        //     window.localStorage.clear();
-        //     window.localStorage.setItem("newcreationVersion", currentVersion);
-        // }
     };
-    this.findBookById = function(iso, id) {
-        var deferred = $.Deferred(),
-            bibles = JSON.parse(window.localStorage.getItem("bible"));
-            select_chapter = getTerm(iso, 'select_chapter');
+    this.findBookById =  function(iso, id) {
+        var deferred = $.Deferred();
+        if (typeof iso === 'undefined'){
+            iso = 'en';
+        }
+        var bibles = '';
+        if (!window.localStorage.bible){
+            initializeBibleLocalStorage();
+        }
+        bibles = JSON.parse(window.localStorage.getItem("bible")); 
+     
+         var   select_chapter = getTerm(iso, 'select_chapter');
         (book = null), (chapters = null);
         l = bibles.length;
         for (var i = 0; i < l; i++) {
@@ -117,13 +116,16 @@ var BibleService = function() {
         deferred.resolve(results);
         return deferred.promise();
     };
-    this.findAllBooks = function(iso) {
+    this.findAllBooks = function(iso = 'en') {
 		// make sure we have something we can work with.
-        if (!window.localStorage.getItem("bible")){
-            this.initialize();
+        if (!window.localStorage.bible){
+             initializeBibleLocalStorage();
         }
-        var deferred = $.Deferred(),
-        books = JSON.parse(window.localStorage.getItem("bible"));
+        if (typeof iso == 'undefined'){
+            iso = 'en';
+        }
+        var deferred = $.Deferred();
+        var books = JSON.parse(window.localStorage.getItem("bible"));
         var len = books.length;
         for (var i=0; i< len;  i++){
             books[i]['book_name_selected'] = books[i][ 'book_name_' + iso];
@@ -138,7 +140,7 @@ var BibleService = function() {
         deferred.resolve(result);
         return deferred.promise();
     };
-    this.findChapterById = function(scope, iso, id, number_of_files =1) {
+    this.findChapterById = function(scope, iso = 'en', id, number_of_files =1) {
         var deferred = $.Deferred();
         var chapter = {}
         var bible_book = null;
@@ -249,7 +251,7 @@ function clean_url(){
 
 
 
-function setDirection(iso){
+function setDirection(iso = 'en'){
     var dir = 'rtl';
     if (iso == 'en'){
         dir = 'ltr';
@@ -328,7 +330,7 @@ function GetNotes(id) {
     return notes[id];
 }
 
-function getTerm(iso, key){
+function getTerm(iso = 'en', key){
     if (!window.localStorage.translation){
         initializeBibleLocalStorage();
     }
@@ -431,7 +433,7 @@ function initializeBibleLocalStorage(){
             "testament": "OT",
             "book_name_ar": " \u0627\u0644\u062a\u0643\u0648\u064a\u0646",
             "book_name_fa": "\u067e\u062f\u0627\u06cc\u0634",
-            "book_name_ur": " \u067e\u06cc\u064e\u062f\u0627\u06cc\u0634 "
+            "book_name_ur": " \u067e\u06cc\u064e\u062f\u0627\u06cc\u0634"
         }, {
             "bid": 2,
             "book_name_en": "Exodus",

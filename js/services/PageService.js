@@ -1,6 +1,6 @@
 var PageService = function() {
   this.initialize = function() {};
-  this.findFile = function(name, iso) {
+  this.findFile = function(name, iso = 'en') {
     var deferred = $.Deferred();
     var fileName = "./files/" + name;
     var pagefile = {

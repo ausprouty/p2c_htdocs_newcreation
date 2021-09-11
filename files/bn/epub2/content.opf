@@ -1,0 +1,177 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="uuid_id">
+  <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata">
+    <dc:title>Bengali</dc:title>
+    <dc:creator opf:role="aut" opf:file-as="Goble, Phil">Phil Goble</dc:creator>
+    <dc:contributor opf:role="bkp">calibre (5.26.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">c9e536f8-f45a-4447-a3ce-e1864b69abee</dc:identifier>
+    <dc:date>0101-01-01T00:00:00+00:00</dc:date>
+    <dc:language>en</dc:language>
+    <dc:identifier opf:scheme="calibre">c9e536f8-f45a-4447-a3ce-e1864b69abee</dc:identifier>
+    <meta name="calibre:timestamp" content="2021-09-06T02:10:53.463822+00:00"/>
+    <meta name="calibre:title_sort" content="Bengali"/>
+    <meta name="cover" content="cover"/>
+    <meta name="calibre:author_link_map" content="{&quot;Phil Goble&quot;: &quot;&quot;}"/>
+  </metadata>
+  <manifest>
+    <item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml"/>
+    <item id="html" href="toc.html" media-type="application/xhtml+xml"/>
+    <item id="html114" href="soil_split_000.html" media-type="application/xhtml+xml"/>
+    <item id="html113" href="soil_split_001.html" media-type="application/xhtml+xml"/>
+    <item id="html112" href="soil_split_002.html" media-type="application/xhtml+xml"/>
+    <item id="html111" href="soil_split_003.html" media-type="application/xhtml+xml"/>
+    <item id="html110" href="soil_split_004.html" media-type="application/xhtml+xml"/>
+    <item id="html19" href="soil_split_005.html" media-type="application/xhtml+xml"/>
+    <item id="html18" href="soil_split_006.html" media-type="application/xhtml+xml"/>
+    <item id="html17" href="soil_split_007.html" media-type="application/xhtml+xml"/>
+    <item id="html16" href="soil_split_008.html" media-type="application/xhtml+xml"/>
+    <item id="html15" href="soil_split_009.html" media-type="application/xhtml+xml"/>
+    <item id="html14" href="soil_split_010.html" media-type="application/xhtml+xml"/>
+    <item id="html13" href="soil_split_011.html" media-type="application/xhtml+xml"/>
+    <item id="html12" href="soil_split_012.html" media-type="application/xhtml+xml"/>
+    <item id="html11" href="soil_split_013.html" media-type="application/xhtml+xml"/>
+    <item id="html222" href="path_split_000.html" media-type="application/xhtml+xml"/>
+    <item id="html221" href="path_split_001.html" media-type="application/xhtml+xml"/>
+    <item id="html220" href="path_split_002.html" media-type="application/xhtml+xml"/>
+    <item id="html219" href="path_split_003.html" media-type="application/xhtml+xml"/>
+    <item id="html218" href="path_split_004.html" media-type="application/xhtml+xml"/>
+    <item id="html217" href="path_split_005.html" media-type="application/xhtml+xml"/>
+    <item id="html216" href="path_split_006.html" media-type="application/xhtml+xml"/>
+    <item id="html215" href="path_split_007.html" media-type="application/xhtml+xml"/>
+    <item id="html214" href="path_split_008.html" media-type="application/xhtml+xml"/>
+    <item id="html213" href="path_split_009.html" media-type="application/xhtml+xml"/>
+    <item id="html212" href="path_split_010.html" media-type="application/xhtml+xml"/>
+    <item id="html211" href="path_split_011.html" media-type="application/xhtml+xml"/>
+    <item id="html210" href="path_split_012.html" media-type="application/xhtml+xml"/>
+    <item id="html29" href="path_split_013.html" media-type="application/xhtml+xml"/>
+    <item id="html28" href="path_split_014.html" media-type="application/xhtml+xml"/>
+    <item id="html27" href="path_split_015.html" media-type="application/xhtml+xml"/>
+    <item id="html26" href="path_split_016.html" media-type="application/xhtml+xml"/>
+    <item id="html25" href="path_split_017.html" media-type="application/xhtml+xml"/>
+    <item id="html24" href="path_split_018.html" media-type="application/xhtml+xml"/>
+    <item id="html23" href="path_split_019.html" media-type="application/xhtml+xml"/>
+    <item id="html22" href="path_split_020.html" media-type="application/xhtml+xml"/>
+    <item id="html21" href="path_split_021.html" media-type="application/xhtml+xml"/>
+    <item id="html32" href="prayer_split_000.html" media-type="application/xhtml+xml"/>
+    <item id="html31" href="prayer_split_001.html" media-type="application/xhtml+xml"/>
+    <item id="html416" href="confession_split_000.html" media-type="application/xhtml+xml"/>
+    <item id="html415" href="confession_split_001.html" media-type="application/xhtml+xml"/>
+    <item id="html414" href="confession_split_002.html" media-type="application/xhtml+xml"/>
+    <item id="html413" href="confession_split_003.html" media-type="application/xhtml+xml"/>
+    <item id="html412" href="confession_split_004.html" media-type="application/xhtml+xml"/>
+    <item id="html411" href="confession_split_005.html" media-type="application/xhtml+xml"/>
+    <item id="html410" href="confession_split_006.html" media-type="application/xhtml+xml"/>
+    <item id="html49" href="confession_split_007.html" media-type="application/xhtml+xml"/>
+    <item id="html48" href="confession_split_008.html" media-type="application/xhtml+xml"/>
+    <item id="html47" href="confession_split_009.html" media-type="application/xhtml+xml"/>
+    <item id="html46" href="confession_split_010.html" media-type="application/xhtml+xml"/>
+    <item id="html45" href="confession_split_011.html" media-type="application/xhtml+xml"/>
+    <item id="html44" href="confession_split_012.html" media-type="application/xhtml+xml"/>
+    <item id="html43" href="confession_split_013.html" media-type="application/xhtml+xml"/>
+    <item id="html42" href="confession_split_014.html" media-type="application/xhtml+xml"/>
+    <item id="html41" href="confession_split_015.html" media-type="application/xhtml+xml"/>
+    <item id="html510" href="pilgrimage_split_000.html" media-type="application/xhtml+xml"/>
+    <item id="html59" href="pilgrimage_split_001.html" media-type="application/xhtml+xml"/>
+    <item id="html58" href="pilgrimage_split_002.html" media-type="application/xhtml+xml"/>
+    <item id="html57" href="pilgrimage_split_003.html" media-type="application/xhtml+xml"/>
+    <item id="html56" href="pilgrimage_split_004.html" media-type="application/xhtml+xml"/>
+    <item id="html55" href="pilgrimage_split_005.html" media-type="application/xhtml+xml"/>
+    <item id="html54" href="pilgrimage_split_006.html" media-type="application/xhtml+xml"/>
+    <item id="html53" href="pilgrimage_split_007.html" media-type="application/xhtml+xml"/>
+    <item id="html52" href="pilgrimage_split_008.html" media-type="application/xhtml+xml"/>
+    <item id="html51" href="pilgrimage_split_009.html" media-type="application/xhtml+xml"/>
+    <item id="html62" href="house_split_000.html" media-type="application/xhtml+xml"/>
+    <item id="html61" href="house_split_001.html" media-type="application/xhtml+xml"/>
+    <item id="html72" href="glossary_split_000.html" media-type="application/xhtml+xml"/>
+    <item id="html71" href="glossary_split_001.html" media-type="application/xhtml+xml"/>
+    <item id="html8" href="notes.html" media-type="application/xhtml+xml"/>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+    <item id="page_css" href="page_styles.css" media-type="text/css"/>
+    <item id="css" href="stylesheet.css" media-type="text/css"/>
+    <item id="added4" href="confession.png" media-type="image/png"/>
+    <item id="cover" href="coverBengali.png" media-type="image/png"/>
+    <item id="added7" href="glossary.png" media-type="image/png"/>
+    <item id="added6" href="housemasjid.png" media-type="image/png"/>
+    <item id="added8" href="notes.png" media-type="image/png"/>
+    <item id="added5" href="pilgrimage.png" media-type="image/png"/>
+    <item id="added3" href="prayerlife.png" media-type="image/png"/>
+    <item id="added1" href="soiltesting.png" media-type="image/png"/>
+    <item id="added2" href="straightpath.png" media-type="image/png"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="titlepage"/>
+    <itemref idref="html"/>
+    <itemref idref="html114"/>
+    <itemref idref="html113"/>
+    <itemref idref="html112"/>
+    <itemref idref="html111"/>
+    <itemref idref="html110"/>
+    <itemref idref="html19"/>
+    <itemref idref="html18"/>
+    <itemref idref="html17"/>
+    <itemref idref="html16"/>
+    <itemref idref="html15"/>
+    <itemref idref="html14"/>
+    <itemref idref="html13"/>
+    <itemref idref="html12"/>
+    <itemref idref="html11"/>
+    <itemref idref="html222"/>
+    <itemref idref="html221"/>
+    <itemref idref="html220"/>
+    <itemref idref="html219"/>
+    <itemref idref="html218"/>
+    <itemref idref="html217"/>
+    <itemref idref="html216"/>
+    <itemref idref="html215"/>
+    <itemref idref="html214"/>
+    <itemref idref="html213"/>
+    <itemref idref="html212"/>
+    <itemref idref="html211"/>
+    <itemref idref="html210"/>
+    <itemref idref="html29"/>
+    <itemref idref="html28"/>
+    <itemref idref="html27"/>
+    <itemref idref="html26"/>
+    <itemref idref="html25"/>
+    <itemref idref="html24"/>
+    <itemref idref="html23"/>
+    <itemref idref="html22"/>
+    <itemref idref="html21"/>
+    <itemref idref="html32"/>
+    <itemref idref="html31"/>
+    <itemref idref="html416"/>
+    <itemref idref="html415"/>
+    <itemref idref="html414"/>
+    <itemref idref="html413"/>
+    <itemref idref="html412"/>
+    <itemref idref="html411"/>
+    <itemref idref="html410"/>
+    <itemref idref="html49"/>
+    <itemref idref="html48"/>
+    <itemref idref="html47"/>
+    <itemref idref="html46"/>
+    <itemref idref="html45"/>
+    <itemref idref="html44"/>
+    <itemref idref="html43"/>
+    <itemref idref="html42"/>
+    <itemref idref="html41"/>
+    <itemref idref="html510"/>
+    <itemref idref="html59"/>
+    <itemref idref="html58"/>
+    <itemref idref="html57"/>
+    <itemref idref="html56"/>
+    <itemref idref="html55"/>
+    <itemref idref="html54"/>
+    <itemref idref="html53"/>
+    <itemref idref="html52"/>
+    <itemref idref="html51"/>
+    <itemref idref="html62"/>
+    <itemref idref="html61"/>
+    <itemref idref="html72"/>
+    <itemref idref="html71"/>
+    <itemref idref="html8"/>
+  </spine>
+  <guide>
+    <reference type="cover" href="titlepage.xhtml" title="Title page"/>
+  </guide>
+</package>

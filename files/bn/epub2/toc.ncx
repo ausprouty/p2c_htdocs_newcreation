@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+  <head>
+    <meta name="dtb:uid" content="c9e536f8-f45a-4447-a3ce-e1864b69abee"/>
+    <meta name="dtb:depth" content="2"/>
+    <meta name="dtb:generator" content="calibre (5.26.0)"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>Bengali</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="ucFawRs5DCN6mPoN7lzcWG2" playOrder="1">
+      <navLabel>
+        <text> গ্রাউন্ড টেস্ট</text>
+      </navLabel>
+      <content src="soil_split_000.html"/>
+    </navPoint>
+    <navPoint id="ul4WHWUyTNFbIjOkaDaZl24" playOrder="16">
+      <navLabel>
+        <text>নতুন সৃষ্টির সরল পথ</text>
+      </navLabel>
+      <content src="path_split_000.html"/>
+    </navPoint>
+    <navPoint id="uUKCOQ6drPuNTNBkh7d5eBF" playOrder="45">
+      <navLabel>
+        <text>সদ্য নির্মিত মুসলিমের প্রার্থনা</text>
+      </navLabel>
+      <content src="prayer_split_000.html"/>
+    </navPoint>
+    <navPoint id="uoB7LPcc5lRaCSXAuwJJKH9" playOrder="46">
+      <navLabel>
+        <text>নতুন সৃজনশীল স্বীকারোক্তি</text>
+      </navLabel>
+      <content src="confession_split_000.html"/>
+    </navPoint>
+    <navPoint id="uEFENx5yv6rRv7fZK9LFGjE" playOrder="47">
+      <navLabel>
+        <text>নতুন সৃষ্টি দেখার জন্য</text>
+      </navLabel>
+      <content src="pilgrimage_split_000.html"/>
+    </navPoint>
+    <navPoint id="uYn79OHvQ6rIAH6YbnlEM42" playOrder="48">
+      <navLabel>
+        <text>সদ্য নির্মিত মুসলমানদের জন্য বাড়িতে</text>
+      </navLabel>
+      <content src="house_split_000.html"/>
+    </navPoint>
+    <navPoint id="u7lv4WQb7ZQeZflZXb7Ah99" playOrder="49">
+      <navLabel>
+        <text>অভিধান</text>
+      </navLabel>
+      <content src="glossary_split_000.html"/>
+    </navPoint>
+
+    <navPoint id="u7pN76hkHcnXz2ybn2qgnXG" playOrder="3">
+      <navLabel>
+        <text>1</text>
+      </navLabel>
+      <content src="soil_split_013.html#N1"/>
+    </navPoint>
+    <navPoint id="uhsMwVVeWoSGHti6BJo7SWC" playOrder="4">
+      <navLabel>
+        <text>3</text>
+      </navLabel>
+      <content src="soil_split_013.html#N3"/>
+    </navPoint>
+    <navPoint id="uGeHUrXbzMiX5vxzQErIUpB" playOrder="5">
+      <navLabel>
+        <text>4</text>
+      </navLabel>
+      <content src="soil_split_013.html#N4"/>
+    </navPoint>
+    <navPoint id="uyhzEmUpFqVXVrSGSaA2sX7" playOrder="6">
+      <navLabel>
+        <text>5</text>
+      </navLabel>
+      <content src="soil_split_013.html#N5"/>
+    </navPoint>
+    <navPoint id="uoeRDh7LzXbxBcP29MgrqEC" playOrder="7">
+      <navLabel>
+        <text>6</text>
+      </navLabel>
+      <content src="soil_split_013.html#N6"/>
+    </navPoint>
+    <navPoint id="uC2aucNvQTrlUmiEu68OcG2" playOrder="8">
+      <navLabel>
+        <text>7</text>
+      </navLabel>
+      <content src="soil_split_013.html#N7"/>
+    </navPoint>
+    <navPoint id="uZBwScGijUwh67uVbJCm2TH" playOrder="9">
+      <navLabel>
+        <text>8</text>
+      </navLabel>
+      <content src="soil_split_013.html#N8"/>
+    </navPoint>
+    <navPoint id="uvHMT49D8hv6ljl8L66oD8D" playOrder="10">
+      <navLabel>
+        <text>9</text>
+      </navLabel>
+      <content src="soil_split_013.html#N9"/>
+    </navPoint>
+    <navPoint id="uH8oOQWxfyvhZeeVuxG6MrC" playOrder="11">
+      <navLabel>
+        <text>10</text>
+      </navLabel>
+      <content src="soil_split_013.html#N10"/>
+    </navPoint>
+    <navPoint id="ui9kr6spVqhtFOSPC68jv3H" playOrder="12">
+      <navLabel>
+        <text>11</text>
+      </navLabel>
+      <content src="soil_split_013.html#N11"/>
+    </navPoint>
+    <navPoint id="uc99CIwjhBGAfHk8OBLMTV5" playOrder="13">
+      <navLabel>
+        <text>12</text>
+      </navLabel>
+      <content src="soil_split_013.html#N12"/>
+    </navPoint>
+    <navPoint id="ugFFfBAfME3bEbOxqrwsX23" playOrder="14">
+      <navLabel>
+        <text>13</text>
+      </navLabel>
+      <content src="soil_split_013.html#N13"/>
+    </navPoint>
+    <navPoint id="uFlYpOPWAAO28PJucZpdAx6" playOrder="15">
+      <navLabel>
+        <text>14</text>
+      </navLabel>
+      <content src="soil_split_013.html#N14"/>
+    </navPoint>
+    <navPoint id="uHuvmds4GoRjaDdDdcixzX8" playOrder="2">
+      <navLabel>
+        <text>( প্রত্যাবর্তন )</text>
+      </navLabel>
+      <content src="soil_split_001.html#R1"/>
+    </navPoint>
+    <navPoint id="u9cpWbjfOPIQPT6e6e7loLF" playOrder="17">
+      <navLabel>
+        <text>15</text>
+      </navLabel>
+      <content src="path_split_021.html#N15"/>
+    </navPoint>
+    <navPoint id="uRgWvQvydvV4lI8YarK4sq2" playOrder="18">
+      <navLabel>
+        <text>16</text>
+      </navLabel>
+      <content src="path_split_021.html#N16"/>
+    </navPoint>
+    <navPoint id="uGEmxlb5n2tFzm8iZu392J5" playOrder="19">
+      <navLabel>
+        <text>17</text>
+      </navLabel>
+      <content src="path_split_021.html#N17"/>
+    </navPoint>
+    <navPoint id="uV3uGNK5NhuFDkJ2ZPVtOW2" playOrder="20">
+      <navLabel>
+        <text>18</text>
+      </navLabel>
+      <content src="path_split_021.html#N18"/>
+    </navPoint>
+    <navPoint id="uGXHwXl2Ob7II2AGLPbAVt4" playOrder="21">
+      <navLabel>
+        <text>19</text>
+      </navLabel>
+      <content src="path_split_021.html#N19"/>
+    </navPoint>
+    <navPoint id="uYAEmxNQ3a3NWZkpjEhsBz5" playOrder="22">
+      <navLabel>
+        <text>20</text>
+      </navLabel>
+      <content src="path_split_021.html#N20"/>
+    </navPoint>
+    <navPoint id="uNGRRB6QWQozq78fJoMWKmD" playOrder="23">
+      <navLabel>
+        <text>21</text>
+      </navLabel>
+      <content src="path_split_021.html#N21"/>
+    </navPoint>
+    <navPoint id="uAZ3vuqf2ufgFSNlkymAVWE" playOrder="24">
+      <navLabel>
+        <text>22</text>
+      </navLabel>
+      <content src="path_split_021.html#N22"/>
+    </navPoint>
+    <navPoint id="uYBfXtsftZlXXxKPscOXPND" playOrder="25">
+      <navLabel>
+        <text>23</text>
+      </navLabel>
+      <content src="path_split_021.html#N23"/>
+    </navPoint>
+    <navPoint id="uXOyjB7dkAYA8HCCifiIEc4" playOrder="26">
+      <navLabel>
+        <text>25</text>
+      </navLabel>
+      <content src="path_split_021.html#N25"/>
+    </navPoint>
+    <navPoint id="ugJT6WyzXHohpn2RFXZIO97" playOrder="27">
+      <navLabel>
+        <text>26</text>
+      </navLabel>
+      <content src="path_split_021.html#N26"/>
+    </navPoint>
+    <navPoint id="u5VpqtczNUvBonfxOzR4m95" playOrder="28">
+      <navLabel>
+        <text>27</text>
+      </navLabel>
+      <content src="path_split_021.html#N27"/>
+    </navPoint>
+    <navPoint id="uW5DZ6yFQFEUOQUj68rzMtB" playOrder="29">
+      <navLabel>
+        <text>28</text>
+      </navLabel>
+      <content src="path_split_021.html#N28"/>
+    </navPoint>
+    <navPoint id="u7kHQNY6XFmhHcXYGoFN9M8" playOrder="30">
+      <navLabel>
+        <text>29</text>
+      </navLabel>
+      <content src="path_split_021.html#N29"/>
+    </navPoint>
+    <navPoint id="uwaVFbPk3oU9IZR4MXnR99B" playOrder="31">
+      <navLabel>
+        <text>30</text>
+      </navLabel>
+      <content src="path_split_021.html#N30"/>
+    </navPoint>
+    <navPoint id="u2E5z5opgLdOFJ7IVWvlgBB" playOrder="32">
+      <navLabel>
+        <text>31</text>
+      </navLabel>
+      <content src="path_split_021.html#N31"/>
+    </navPoint>
+    <navPoint id="u86XvQ6EuzjJ7cbvujht9IA" playOrder="33">
+      <navLabel>
+        <text>33</text>
+      </navLabel>
+      <content src="path_split_021.html#N33"/>
+    </navPoint>
+    <navPoint id="uH7X6SQPHlYLIiVunrtBERD" playOrder="34">
+      <navLabel>
+        <text>34</text>
+      </navLabel>
+      <content src="path_split_021.html#N34"/>
+    </navPoint>
+    <navPoint id="u7VXDnvWYDwuOEwu5JWTVU4" playOrder="35">
+      <navLabel>
+        <text>35</text>
+      </navLabel>
+      <content src="path_split_021.html#N35"/>
+    </navPoint>
+    <navPoint id="u7gfoezViOihqOA7Bs8E293" playOrder="36">
+      <navLabel>
+        <text>36</text>
+      </navLabel>
+      <content src="path_split_021.html#N36"/>
+    </navPoint>
+    <navPoint id="utWPf3jHoLDS9z3J2AnPFV2" playOrder="37">
+      <navLabel>
+        <text>37</text>
+      </navLabel>
+      <content src="path_split_021.html#N37"/>
+    </navPoint>
+    <navPoint id="ulWYaDuKrE2Ng6TpGmbAzc7" playOrder="38">
+      <navLabel>
+        <text>38</text>
+      </navLabel>
+      <content src="path_split_021.html#N38"/>
+    </navPoint>
+    <navPoint id="uhmZBhfzHOiZZXsWkYVjB87" playOrder="39">
+      <navLabel>
+        <text>39</text>
+      </navLabel>
+      <content src="path_split_021.html#N39"/>
+    </navPoint>
+    <navPoint id="uuKfrcy37FPgsmqUGOOj6DB" playOrder="40">
+      <navLabel>
+        <text>40</text>
+      </navLabel>
+      <content src="path_split_021.html#N40"/>
+    </navPoint>
+    <navPoint id="uJntKmfr9loaNlqrzorsgBE" playOrder="41">
+      <navLabel>
+        <text>41</text>
+      </navLabel>
+      <content src="path_split_021.html#N41"/>
+    </navPoint>
+    <navPoint id="uPryxwjwQaN3dEPd77M2pu7" playOrder="42">
+      <navLabel>
+        <text>42</text>
+      </navLabel>
+      <content src="path_split_021.html#N42"/>
+    </navPoint>
+    <navPoint id="urR7WzzEiayWFtlULSJrTz7" playOrder="43">
+      <navLabel>
+        <text>43</text>
+      </navLabel>
+      <content src="path_split_021.html#N43"/>
+    </navPoint>
+    <navPoint id="uk6ixdoyD78QFbc97eTek9E" playOrder="44">
+      <navLabel>
+        <text>44</text>
+      </navLabel>
+      <content src="path_split_021.html#N44"/>
+    </navPoint>
+  </navMap>
+</ncx>

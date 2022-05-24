@@ -376,7 +376,11 @@ function initializeBibleLocalStorage(){
             "available_offline": "অফলাইনে ব্যবহারের জন্য উপলব্ধ",
             "bible": "বাইবেল",
             "bible_downloaded": "বাইবেল ডাউনলোড করা হয়েছে",
+<<<<<<< HEAD
             "bible_ready": "বাইবেল অফলাইন ব্যবহারের জন্য প্রস্তুত",
+=======
+            "bible_ready": "বাইবেল ডাউনলোড করা হয়েছে",
+>>>>>>> 27ec828429f1454c4b13bf9440216fe92d3248f2
             "book_ready": "অফলাইন ব্যবহারের জন্য % প্রস্তুত",
             "download_bible": "অফলাইনে ব্যবহারের জন্য বাইবেল ডাউনলোড করুন",
             "download_book": "অফলাইন ব্যবহারের জন্য % ডাউনলোড করুন।",
@@ -385,7 +389,11 @@ function initializeBibleLocalStorage(){
             "link_to_app": "এখানে নতুন ক্রিয়েশন অ্যাপের লিঙ্ক দেওয়া হল:",
             "finished_download": "ডাউনলোড শেষ",
             "remove_item": "স্থানীয় স্টোরেজ থেকে % সরান",
+<<<<<<< HEAD
             "resume": "জীবনবৃত্তান্ত %",
+=======
+            "resume": "স্থানীয় স্টোরেজ থেকে % সরান",
+>>>>>>> 27ec828429f1454c4b13bf9440216fe92d3248f2
             "select_book": "বই নির্বাচন করুন",
             "select_chapter": "অধ্যায় নির্বাচন করুন"
         },
@@ -424,13 +432,21 @@ function initializeBibleLocalStorage(){
             "select_chapter": "فصل را انتخاب کنید"
         },
         {   "iso": "id",
+<<<<<<< HEAD
            "available_offline": "Tersedia untuk penggunaan offline",
+=======
+            "available_offline": "Tersedia untuk penggunaan offline",
+>>>>>>> 27ec828429f1454c4b13bf9440216fe92d3248f2
             "bible": "Alkitab",
             "bible_downloaded": "Alkitab diunduh",
             "bible_ready": "Alkitab siap untuk penggunaan offline",
             "book_ready": "% siap untuk penggunaan offline",
             "download_bible": "Unduh Alkitab untuk penggunaan offline",
+<<<<<<< HEAD
             "download_book": "Unduh % untuk penggunaan offline",
+=======
+            "download_book": "Unduh % untuk penggunaan offline.",
+>>>>>>> 27ec828429f1454c4b13bf9440216fe92d3248f2
             "downloading": "Mengunduh",
             "downloading_chapter": "Mengunduh Bab",
             "link_to_app": "Berikut ini tautan ke Aplikasi Kreasi Baru:",
@@ -445,6 +461,7 @@ function initializeBibleLocalStorage(){
             "bible": "بائبل",
             "bible_downloaded": "انجیل ډاونلوډ شوی",
             "bible_ready": "انجیل د آفلاین کارونې لپاره چمتو دی",
+<<<<<<< HEAD
             "book_ready": "آفلاین ٪د آفلاین کارونې لپاره چمتو دی",
             "download_bible": "د آفلاین کارونې لپاره انجیل ډاونلوډ کړئ",
             "download_book": "٪د آفلاین کارونې لپارهکښته کول ډاونلوډ کړئ",
@@ -453,6 +470,16 @@ function initializeBibleLocalStorage(){
             "link_to_app": "دلته د نوي تخلیق اپلیکیشن لینک دی:",
             "finished_download": "ډاونلوډ بشپړ شو",
             "remove_item": "ځایی له محلي ذخیره څخه ٪لرې کړئ",
+=======
+            "book_ready": "offline د آفلاین کارونې لپاره چمتو دی",
+            "download_bible": "د آفلاین کارونې لپاره انجیل ډاونلوډ کړئ",
+            "download_book": "د آفلاین کارونې لپاره Download ډاونلوډ کړئ.",
+            "downloading": "کښته کول",
+            "downloading_chapter": "د فصل کښته کول",
+            "link_to_app": "د فصل کښته کول",
+            "finished_download": "ډاونلوډ بشپړ شو",
+            "remove_item": "local له محلي ذخیره څخه لرې کړئ",
+>>>>>>> 27ec828429f1454c4b13bf9440216fe92d3248f2
             "resume": "بیا پیل کول ٪",
             "select_book": "کتاب غوره کړئ",
             "select_chapter": "څپرکی غوره کړئ"

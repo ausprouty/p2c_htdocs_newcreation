@@ -1,7 +1,12 @@
 
 importScripts("js/analytics-helper.js");
 
+<<<<<<< HEAD
 
+=======
+importScripts("js/sw-offline-google-analytics.js");
+goog.offlineGoogleAnalytics.initialize();
+>>>>>>> 27ec828429f1454c4b13bf9440216fe92d3248f2
 var CACHE_DYNAMIC_NAME = "content-5";
 //Change this value every time before you build
 const LATEST_VERSION = "2.18";
@@ -30,7 +35,11 @@ workbox.precaching.precacheAndRoute([
   "/css/basic.css?v=" + LATEST_VERSION,
   "/css/newcreation.css?v=" + LATEST_VERSION,
   "/css/styles.css?v=" + LATEST_VERSION,
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 27ec828429f1454c4b13bf9440216fe92d3248f2
   "/lib/jszip.min.js?v=" + LATEST_VERSION,
   "/lib/lz-string.min.js?v=" + LATEST_VERSION
 ]);

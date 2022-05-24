@@ -1,20 +1,29 @@
 
-const STANDARD_DOWNLOAD_URL = 'http://localhost/laravel_newcreation/bible/book/';
+const STANDARD_DOWNLOAD_URL = 'https://newcreation.app/bible/book/';
 
 
 function downloadBook(iso, book, number_of_chapters){
     var service = new BibleService;
     service.findChapterById('book',iso, book, number_of_chapters).done(function() {
+        elem = document.getElementById("download-book");
+        elem.innerHTML = 'Finished';
+        location.reload();
     });
 
 }
 function downloadBible(iso){
+    if (typeof iso == 'undefined'){
+        iso = 'en';
+    }
     elem = document.getElementById("download-bible");
     elem.innerHTML = 'Downloading';
     downloadBiblebyBook(iso);
     return;
 }
 function downloadBiblebyBook (iso){
+    if (typeof iso == 'undefined'){
+        iso = 'en';
+    }
     var que = [];
     if (window.localStorage.getItem("downloadQue")){
         que = JSON.parse( window.localStorage.getItem("downloadQue"));

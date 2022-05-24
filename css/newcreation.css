@@ -9,6 +9,21 @@
 
 /* nav */
 
+
+h2,h3,h4{
+	color: var(--color-dark-brown);
+
+}
+.quran{
+	color: var(--color-dark-green);
+}
+p.indent{
+  margin-left:15px;
+}
+a.front{
+	text-decoration: underline;
+	color: var(--color-dark-brown);
+}
 nav {
   display: block;
 }
@@ -67,9 +82,14 @@ img.nav-share{
 	clear: both;
 	display: table;
   }
+.nav-column-menu{
+	float: left;
+  	width: 10%;
+
+}
 .nav-column-main{
 	float: left;
-  	width: 79%;
+  	width: 69%;
 
 }
 .nav-column-share{
@@ -81,7 +101,7 @@ img.nav-share{
 }
 .ios-visible{
 	display:block;
-	
+
 }
 img.ios-visible{
 	width:100%;
@@ -124,7 +144,7 @@ a.bible-book{
 	font-weight:bold;
 	line-height: 30px;
 	padding-top: 60px;
-	
+
 }
 .bible_book{
 	font-size :30px;
@@ -132,7 +152,7 @@ a.bible-book{
 	font-weight:bold;
 	line-height: 30px;
 	padding-top: 60px;
-	
+
 }
 .bible_book_rtl{
 	font-size :30px;
@@ -140,7 +160,7 @@ a.bible-book{
 	font-weight:bold;
 	line-height: 30px;
 	padding-top: 60px;
-	
+
 }
 .bible_select_chapters{
 	color:white;
@@ -149,11 +169,11 @@ a.bible-book{
 table.bible_chapters{
 	width:90%;
 	margin-left:10px;
-	
+
 }
 table.bible_chapters.rtl{
 	margin-right:20px;
-	
+
 }
 td.bible_chapter{
 	border-style: solid;
@@ -191,7 +211,7 @@ div.menutitle{
 	position:absolute;
 	bottom:10px;
 }
-	
+
 }
 h1{
 	text-align:center;
@@ -233,7 +253,7 @@ div.download-banner.green{
 	width: 100%;
 	background-color: grey;
 }
-  
+
 #myBar {
 	width: 1%;
 	height: 30px;
@@ -261,7 +281,7 @@ div.opening{
 	margin-top: 50px;
 }
 h2.principles{
-	
+
 	font-size: 120%;
 	color: black;
 	margin-bottom: 20px;
@@ -283,9 +303,10 @@ table.principle_circles{
 	width:90%;
 	margin-bottom: 20px;
 
-	
+
 }
 td.principle_circles{
+	vertical-align:top;
 	padding-top: 20px;
 	padding-left:20px;
 	padding-right:20px;
@@ -328,7 +349,7 @@ div.newcreation {
 	color: white;
 	line-height:110%;
 	text-decoration: none;
-} 
+}
 
 
 li.toc{
@@ -343,7 +364,7 @@ h2.toc{
 }
 a.toc.opening{
 	color:white;
-	
+
 }
 a.toc.opening.book{
 	color:black;
@@ -386,7 +407,7 @@ p.study_end{
 }
 .lantern{
 	background-color:var(--color-light-green);
-	
+
 }
 .cover{
 	margin-bottom: 150px;
@@ -410,7 +431,7 @@ img.background{
 }
 div.note_hide{
 	display:none;
-	
+
 }
 .note_hide{
 	display:none;
@@ -421,12 +442,12 @@ div.note_hide{
 	padding-top:10px;
 	padding-left:10px;
 	padding-right:10px;
-	
+
 }
 
 .note_visible{
 	display:none;
-	
+
 }
 .note_hidden{
 	display:block;
@@ -441,28 +462,28 @@ div.note_hide{
  .dropbtn {
 	cursor: pointer;
   }
-  
+
   /* Dropdown button on hover & focus */
   .dropbtn:hover, .dropbtn:focus {
 	cursor: pointer;
   }
-  
+
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
 	position: relative;
 	display: inline-block;
   }
-  
+
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
 	display: none;
 	position: absolute;
+
 	background-color: #f1f1f1;
-	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
   }
-  
+
   /* Links inside the dropdown */
   .dropdown-content a {
 	color: black;
@@ -470,12 +491,12 @@ div.note_hide{
 	text-decoration: none;
 	display: block;
   }
-  
+
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #ddd}
-  
+
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;} 
+  .show {display:block;}
   .hide {display:none;}
   div.chapter{
 	display: inline-block;
@@ -500,4 +521,21 @@ div.note_hide{
   div.footer{
 	  display:block;
 	  height:100px;
+  }
+  @media (max-width:600px){
+	.dropdown-content {
+		right: 0;
+	}
+  }
+  @media (max-width: 400px) {
+	/* CSS that should be displayed if width is equal to or less stated amount goes here */
+	.bar{
+		height: 45px;
+	}
+  @media (max-width: 300px) {
+	/* CSS that should be displayed if width is equal to or less stated amount goes here */
+	.bar{
+		height: 30px;
+	}
+
   }

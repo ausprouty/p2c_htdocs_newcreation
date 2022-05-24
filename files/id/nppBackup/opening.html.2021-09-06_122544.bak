@@ -1,0 +1,53 @@
+<div class="lantern" dir = "ltr">
+  <div class="opening ">
+    <div class="ios-hidden">
+      
+      <img
+        class="ios-hidden"
+        src="https://newcreations.app/files/images/iOS.png"
+      />
+    </div>
+    <br/>
+    <h2 class="toc opening">
+      <a class="toc opening book" href="#id/bible">Alkitab</a>
+    </h2>
+    <h2 class="toc opening">
+      <a id = "straight_path" class="toc opening book" href="id/ebook?url=../files/id/epub3/NewCreation.epub&loc=soil_split_001.html">TJalan Lurus</a>
+    </h2>
+    <ol class="toc opening">
+      <li class="toc opening">
+        <a class="toc opening" href="id/ebook?url=../files/id/epub3/NewCreation.epub&loc=soil_split_001.html">Pengujian Tanah</a>
+      </li>
+      <li class="toc opening">
+        <a class="toc opening" href="id/ebook?url=../files/id/epub3/NewCreation.epub&loc=path_split_001.html">Jalan Lurus Ciptaan Baru</a>
+      </li>
+      <li class="toc opening">
+        <a class="toc opening" href="id/ebook?url=../files/id/epub3/NewCreation.epub&loc=prayer_split_001.html">Kehidupan Doa Seorang Muslim Ciptaan Baru</a>
+      </li>
+      <li class="toc opening">
+        <a class="toc opening" href="id/ebook?url=../files/id/epub3/NewCreation.epub&loc=confession_split_001.html">Pengakuan Penciptaan Baru</a>
+      </li>
+      <li class="toc opening">
+        <a class="toc opening" href="id/ebook?url=../files/id/epub3/NewCreation.epub&loc=pilgrimage_split_001.html">Ziarah Ciptaan Baru</a>
+      </li>
+      <li class="toc opening">
+        <a class="toc opening" href="id/ebook?url=../files/id/epub3/NewCreation.epub&loc=house_split_001.html">Bagaimana Memulai Masjid Rumah dan Mesianik Madrasah Cipta Baru
+        </a>
+      </li>
+      <li class="toc opening">
+        <a class="toc opening" href="id/ebook?loc=glossary.html">Glosarium</a>
+      </li>
+    </ol>
+    <h2 class="toc opening">
+      <a class="toc opening book" href="#id/principles"
+        >Four Spiritual Principles</a
+      >
+    </h2>
+  </div>
+</div>
+<p class="copyright"></p>
+<script>
+  if (localStorage.getItem("currentSectionIndex")){
+    document.getElementById("straight_path").innerHTML = 'The Straight Path <span class="resume">(resume)</span>';
+  }
+</script>

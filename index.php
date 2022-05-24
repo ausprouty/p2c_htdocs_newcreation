@@ -22,7 +22,7 @@ define('LARAVEL_START', microtime(true));
 */
 
 
-require __DIR__.'/../../applications/laravel_newcreation/vendor/autoload.php';
+require '/home/newcre17/applications/laravel_newcreation/vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -33,11 +33,11 @@ require __DIR__.'/../../applications/laravel_newcreation/vendor/autoload.php';
 | This bootstraps the framework and gets it ready for use, then it
 | will load up this application so that we can run it and send
 | the responses back to the browser and delight our users.
-| 
+|
 */
 
 
-$app = require_once __DIR__.'/../../applications/laravel_newcreation/bootstrap/app.php';
+$app = require_once '/home/newcre17/applications/laravel_newcreation/bootstrap/app.php';
 
 /*
 |--------------------------------------------------------------------------

@@ -82,3 +82,28 @@ function toggleMode() {
     document.querySelector("#mode").innerText = "Standard Mode";
   }
 }
+
+function listCache(){
+  var stored = '';
+  var temp = '';
+  window.caches.keys().then(function (cacheNames) {
+    cacheNames.forEach(function (cacheName) {
+      window.caches
+        .open(cacheName)
+        .then(function (cache) {
+          return cache.keys();
+        })
+        .then(function (requests) {
+          requests.forEach(function (request) {
+           //temp = stored + '<p><a href ="' + request.url + '">';
+           //stored = temp + request.url +  '</a></p>'+ "\n";
+           temp = stored + request.url + "\n";
+           stored = temp;
+            return;
+          });
+          console.log (stored);
+          document.getElementById("cache").innerText = stored;
+        });
+    });
+  });
+}

@@ -22,15 +22,14 @@
         service.setup();
         router.addRoute("", function() {
             var iso = 'en';
-            page.findFile("en/opening.html", iso).done(function(page) {
-                console.log (page);
-                slider.slidePage(new HomeView(page).render().$el);
+            page.findFile("en/opening.html", iso).done(function(page, iso) {
+                slider.slidePage(new HomeView(page, iso).render().$el);
             });
             $(".right, .left").remove();
         });
         router.addRoute(":iso/index", function(iso) {
             page.findFile(iso + "/opening.html", iso ).done(function(page,iso) {
-                slider.slidePage(new HomeView(page).render().$el);
+                slider.slidePage(new HomeView(page, iso).render().$el);
             });
             $(".right, .left").remove();
         });
@@ -135,15 +134,15 @@
             });
             $(".right, .left").remove();
         });
-        
+
         router.start();
     });
 
     /* --------------------------------- Event Registration -------------------------------- */
     const LATEST_VERSION = "2.18";
-    
+
     $(window).on("hashchange", $.proxy(this.route, this));
-    
+
     if ("serviceWorker" in navigator) {
         window.addEventListener("load", function() {
             navigator.serviceWorker.register("./service-worker.js");
@@ -173,7 +172,7 @@
             }
         }
         }
-    } 
+    }
 
 
     /* ---------------------------------- Local Functions ---------------------------------- */

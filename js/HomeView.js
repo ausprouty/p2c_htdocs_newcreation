@@ -1,10 +1,10 @@
-var HomeView = function(page) {
+var HomeView = function(page, iso) {
   this.initialize = function() {
     this.$el = $("<div/>");
   };
   this.render = function() {
-  
     var content = this.template(page);
+    console.log (content);
     if (isIOS()) {
       if (needsToSeeIOSPrompt()) {
         var content2 = content.replace(/ios-hidden/g, "ios-visible");

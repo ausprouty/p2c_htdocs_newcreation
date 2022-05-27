@@ -11,13 +11,24 @@ var PageService = function() {
 
     $.ajax({
       url: pagefile.file,
-      success: function(result) {
-        pagefile.text = result;
-       
-        deferred.resolve(pagefile);
-      }
+    }).done(function(data){
+        pagefile.text = data;
+        var fileName = "./files/" + iso + "/nav.html";
+        var navfile = {
+          name: iso +'/nav.html',
+          file: fileName,
+          iso: iso
+        };
+        $.ajax({
+          url: navfile.file,
+          success: function(result) {
+            pagefile.nav = result;
+            console.log (pagefile)
+            deferred.resolve(pagefile);
+          }
+        });
     });
-
     return deferred.promise();
   };
 };
+

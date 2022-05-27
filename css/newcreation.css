@@ -71,6 +71,7 @@ img.nav-path
 {
 	width:100%;
 	max-width:535px;
+	max-height:62px;
 }
 img.nav-share{
 	width:100%;
@@ -219,9 +220,14 @@ h1{
 body{
 	margin-left:0px;
 	margin-right:0px;
+
+}
+div.page{
+	width:100%;
+
 }
 .content{
-	top:60px;
+	top:90px;
 	bottom:0px;
 	padding-bottom: 100px;
 	margin-bottom: 100px;
@@ -363,12 +369,13 @@ h2.toc{
 	margin-left:10px;
 }
 a.toc.opening{
-	color:white;
+	color:black;
+	margin-left: 10px;
 
 }
 a.toc.opening.book{
 	color:black;
-	margin-left:10px;
+	margin-left: 0px;
 	font-size: 120%;
 
 }
@@ -478,11 +485,6 @@ div.note_hide{
   .dropdown-content {
 	display: none;
 	position: absolute;
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> 27ec828429f1454c4b13bf9440216fe92d3248f2
 	background-color: #f1f1f1;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
@@ -541,9 +543,4 @@ div.note_hide{
 	.bar{
 		height: 30px;
 	}
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> 27ec828429f1454c4b13bf9440216fe92d3248f2
   }
